@@ -1,0 +1,235 @@
+@import "Utils.scss";
+@import "MediaQueries.scss";
+#mainContainer{
+    width: 100%;
+    .subTitle{
+        @include orangeTextLed;
+        font-size:60px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    #hero{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        #heroContainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            @include border-led;
+            margin-bottom: 80px;
+            @include smartphone{
+                grid-template-columns: 1fr;
+            }
+            .title{
+                padding: 20px;
+                h1{
+                    font-size: 60px;
+                    color: $primary-color;
+                }
+                
+                h3{
+                    font-size: 40px;
+                    color: $spanColor;
+                }
+            }
+            .firstImpress{
+                padding: 20px;
+                p{
+                    font-size: 28px;
+                    text-align: center;
+                    @include tablet{
+                        font-size: 24px;
+                    }
+                }
+            
+                a{
+                    text-decoration: none;
+                    color: $spanColor;
+                }
+            }
+        }
+        .infoContainer{
+            @include border-led;
+            padding: 20px;
+            text-align: center;
+            h1{
+                font-size: 30px;
+                @include orangeTextLed;
+                padding: 20px;
+            }
+            p{
+                span{
+                    color: $spanColor;
+                }
+                font-size: 26px;
+                width: 90%;
+                margin: auto;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    #skills{
+        text-align: center;
+        
+        #skillsContainer{
+            width: 70%;
+            margin: auto;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include tablet{
+                flex-direction: column;
+                justify-content: center;
+                width: 90%;
+                margin: auto
+            }
+            .listContainer{
+                @include border-led;
+                padding: 20px;
+                margin-right: 20px;
+                height: 520px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                @include tablet{
+                    margin-bottom: 40px;
+                    margin-right: 0Px;
+                    width: 100%;
+                    height: auto
+                }
+                h1{
+                    @include orangeTextLed;
+                    font-size:40px;
+                }
+                ul{
+                    list-style: none;
+                    padding-top: 20px;
+                    @include tablet{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    li{
+                        padding: 15px;
+                        font-size: 30px;
+                        @include smartphone{
+                            padding: 5px;
+                            font-size: 22px
+                        }
+                    }
+                }
+            }
+            #projectContainer{
+                @include border-led;
+                width:600px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                @include borderColorChange;
+                @include tablet{
+                    width: 100%;
+                }
+
+                .imageStyle{
+                    width: 500px;
+                    height: 400px;
+                    margin-top: 50px;
+                    @include tablet{
+                        width: 90%;
+                        margin: auto;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+                
+                h1{
+                    @include orangeTextLed;
+                    font-size: 40px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    #Contact{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        #contactContainer{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include border-led;
+            .formTitle{
+                @include orangeTextLed;
+                width: 90%;
+                margin: auto;
+                margin: 20px 0px;
+                font-size: 30px;
+                text-align: center;
+            }
+            form{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 50px;
+                label{
+                    font-size: 26px;
+                    @include orangeTextLed;
+                    margin: 10px 0;
+                }
+                input{
+                    padding: 10px;
+                    outline: none;
+                    color: black;
+                    border-radius: 10px;
+                    &:focus{
+                        @include border-led;
+                        border: 2px solid white;
+                    }
+                }
+                textarea{
+                    padding: 10px;
+                    outline: none;
+                    color: black;
+                    border-radius: 10px;
+                    margin-bottom: 20px;
+                    &:focus{
+                        @include border-led;
+                        border: 2px solid white;
+                    }
+                }
+                button{
+                    padding: 20px;
+                    background-color: black;
+                    @include border-led;
+                    @include orangeTextLed;
+                    font-size: 20px;
+                    &:hover{
+                        box-shadow: 
+                        0 0 0.1vh 0.4vh #ffaeae,
+                        0 0 0.4vh 0.6vh #ff8282,
+                        0 0 4vh 0.4vh #ff6464, 
+                        inset 0 0 1.5vh 0.4vh #ff6464,
+                        inset 0 0 0.4vh 0.2vh #ff8282,
+                        inset 0 0 0.5vh  0.2vh #ffaeae;
+                    }
+                }
+                h2{
+                    @include orangeTextLed;
+                    text-align: center;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}

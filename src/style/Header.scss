@@ -1,0 +1,80 @@
+@import "Utils.scss";
+@import "MediaQueries.scss";
+#headerContainer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    box-shadow: inset $spanColor;
+    border-bottom: 1px solid $spanColor;
+    img{
+        @include smartphone{
+            height: 60px;
+            padding-left: 20px;
+        }
+    }
+    .logo{
+        padding-left: 80px;
+        @include smartphone{
+            padding-left: 20px;
+        }
+    }
+    
+    .linkContainer{
+        padding-right: 40px; 
+        @include smartphone{
+            padding-right: 0px;
+            margin-right: 10px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center; 
+        width: fit-content;
+        .current{
+            @include border-led;
+            @include orangeTextLed;
+        }
+       
+
+        a{
+            text-decoration: none;
+            color:#f8e7ff;
+            font-size: 20px;
+            padding: 15px;
+            margin-right: 10px;
+            @include border-led;
+            @include orangeTextLed;
+            @include smartphone{
+                font-size: 16px;
+                padding: 10px;
+                
+            }
+            &:hover{
+                box-shadow: 
+                0 0 0.1vh 0.4vh #ffaeae,
+                0 0 0.4vh 0.6vh #ff8282,
+                0 0 4vh 0.4vh #ff6464, 
+                inset 0 0 1.5vh 0.4vh #ff6464,
+                inset 0 0 0.4vh 0.2vh #ff8282,
+                inset 0 0 0.5vh  0.2vh #ffaeae;
+                text-shadow: 
+                .1vh 0vh .25vh #f8e7ff, 
+        
+                .1vh 0vh 0vh  #f2d2ff, 
+                .1vh 0vh .1vh #e5aafd, 
+                .1vh 0vh 2vh #e090ff, 
+        
+                .1vh 0vh 1vh #cd58fa, 
+                .1vh 0vh 5vh #c435fc, 
+                .1vh 0vh 10vh #bc13fe;
+            }
+        }
+    }
+}
