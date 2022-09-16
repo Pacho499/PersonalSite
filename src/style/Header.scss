@@ -17,7 +17,7 @@
     .logo{
         padding-left: 80px;
         @include smartphone{
-            padding-left: 20px;
+            padding-left: 5px;
         }
     }
     
@@ -52,7 +52,7 @@
             @include border-led;
             @include orangeTextLed;
             @include smartphone{
-                font-size: 16px;
+                font-size: 12px;
                 padding: 10px;
                 
             }
