@@ -12,7 +12,7 @@ const Header = () => {
                 <ul>
                     <a href="#skills">Competenze</a>
                     <a href="#Contact">Contattami</a>
-                    <a href={CV} download="LorenzoPalumboCV">Scarica il mio CV</a>
+                    <a href={CV} download="LorenzoPalumboCV">Scarica CV</a>
                 </ul>
             </div>
         </div>

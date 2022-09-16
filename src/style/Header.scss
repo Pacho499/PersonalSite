@@ -37,6 +37,7 @@
         list-style: none;
         align-items: center; 
         width: fit-content;
+        margin-left: 10px;
         .current{
             @include border-led;
             @include orangeTextLed;
