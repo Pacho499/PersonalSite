@@ -85,7 +85,7 @@ const Home = () => {
                     <h1>"Scegli un lavoro che ami e non dovrai lavorare neppure un giorno della tua vita"</h1>
                     <p>
                         Questo è stato il mio pensiero quando ho deciso di <span>lasciare la mia precendente professione </span> per iniziare a studiare programmazione,
-                        una <span>passione</span>  che mi ha spinto a volerla trasformare in <span>lavoro</span> per avere molte piu soddisfazioni. <br />
+                        cercando di trasformare la mia <span>passione in lavoro</span> per avere molte più soddisfazioni. <br />
                         Attualmente mi occupo dello sviluppo web lato front-end e continuo a studiare per poter diventare un full-stack developer
                     </p>
                 </div>
