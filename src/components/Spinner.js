@@ -1,9 +1,7 @@
-import style from "../style/Spinner.module.css"
+import style from "../style/Spinner.module.css";
 
 const Spinner = () => {
-    return(
-        <div className={style.loader}>Loading...</div>
-    )
-}
+  return <div className={style.loader}>Loading...</div>;
+};
 
-export default Spinner
+export default Spinner;
