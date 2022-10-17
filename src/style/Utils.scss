@@ -1,124 +1,111 @@
 $spanColor: #ff8b8b;
-$primary-color:#945fdf;
-$Secondary-color:#a58fe9;
-
+$primary-color: #945fdf;
+$Secondary-color: #a58fe9;
 
 @mixin border-led {
-    border: solid 2px ;
-    border-radius: 10px;
-    box-shadow: 
-        0 0 0.1vh 0.4vh #d66eff,
-        0 0 0.4vh 0.6vh #ca45ff,
-        0 0 4vh 0.4vh #bc13fe, 
-        inset 0 0 1.5vh 0.4vh #bc13fe,
-        inset 0 0 0.4vh 0.2vh #ca45ff,
-        inset 0 0 0.5vh  0.2vh #d66eff;
+  border: solid 2px;
+  border-radius: 10px;
+  box-shadow: 0 0 0.1vh 0.4vh #d66eff, 0 0 0.4vh 0.6vh #ca45ff,
+    0 0 4vh 0.4vh #bc13fe, inset 0 0 1.5vh 0.4vh #bc13fe,
+    inset 0 0 0.4vh 0.2vh #ca45ff, inset 0 0 0.5vh 0.2vh #d66eff;
 }
 
 @mixin orangeTextLed {
-    text-shadow: 
-        .1vh 0vh .25vh #f8e7ff, 
-
-        .1vh 0vh 0vh  #ffcdcd, 
-        .1vh 0vh .1vh #ffa6a6, 
-        .1vh 0vh 2vh #ff8b8b, 
-
-        .1vh 0vh 1vh #ff6767, 
-        .1vh 0vh 5vh #ff5656, 
-        .1vh 0vh 10vh #ff4242;
+  text-shadow: 0.1vh 0vh 0.25vh #f8e7ff, 0.1vh 0vh 0vh #ffcdcd,
+    0.1vh 0vh 0.1vh #ffa6a6, 0.1vh 0vh 2vh #ff8b8b, 0.1vh 0vh 1vh #ff6767,
+    0.1vh 0vh 5vh #ff5656, 0.1vh 0vh 10vh #ff4242;
 }
 @mixin errorTextLed {
-    text-shadow: 
-        .1vh 0vh .25vh #f8e7ff, 
-
-        .1vh 0vh 0vh  #ffbdbd, 
-        .1vh 0vh .1vh #ff8686, 
-        .1vh 0vh 2vh #ff6d6d, 
-
-        .1vh 0vh 1vh #ff4343, 
-        .1vh 0vh 5vh #ff2929, 
-        .1vh 0vh 10vh #ff0000;
+  text-shadow: 0.1vh 0vh 0.25vh #f8e7ff, 0.1vh 0vh 0vh #ffbdbd,
+    0.1vh 0vh 0.1vh #ff8686, 0.1vh 0vh 2vh #ff6d6d, 0.1vh 0vh 1vh #ff4343,
+    0.1vh 0vh 5vh #ff2929, 0.1vh 0vh 10vh #ff0000;
 }
 
-@mixin listContainer{
-    padding: 40px;
-    @include border-led;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    ul{
-        list-style: none;
-        li{
-            margin-top: 30px;
-        }
+@mixin listContainer {
+  padding: 40px;
+  @include border-led;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  ul {
+    list-style: none;
+    li {
+      margin-top: 30px;
     }
+  }
 }
 
-@mixin openMenu{
-    animation-name: renderMenu;
-    animation-duration: 1s;
-    @keyframes renderMenu {
-        from{
-            width: 0vw;
-            height: 0vw;
-        }
-        to{
-            height: 100vh;
-            width: 70vw;
-        }
+@mixin openMenu {
+  animation-name: renderMenu;
+  animation-duration: 1s;
+  @keyframes renderMenu {
+    from {
+      width: 0vw;
+      height: 0vw;
     }
+    to {
+      height: 100vh;
+      width: 60%;
+    }
+  }
 }
 
-@mixin borderColorChange{
-    animation-name: BorderColorChange;
-    animation-duration: 1s;
-    @keyframes BorderColorChange{
-        5%,10%,15%,20%,40%,50%,80%,90%{
-            
-            border:solid 2px;
-            box-shadow: none;
-            opacity: 0.5;
-            
-        }
-        30%,60%,65%,70%,75%, 100%{
-            border: solid 2px;
-            box-shadow: 
-                0 0 0.1vh 0.4vh #d66eff,
-                0 0 0.4vh 0.6vh #ca45ff,
-                0 0 4vh 0.4vh #bc13fe, 
-                inset 0 0 1.5vh 0.4vh #bc13fe,
-                inset 0 0 0.4vh 0.2vh #ca45ff,
-                inset 0 0 0.5vh  0.2vh #d66eff;
-                opacity: 1;
-            
-        }
+@mixin borderColorChange {
+  animation-name: BorderColorChange;
+  animation-duration: 1s;
+  @keyframes BorderColorChange {
+    5%,
+    10%,
+    15%,
+    20%,
+    40%,
+    50%,
+    80%,
+    90% {
+      border: solid 2px;
+      box-shadow: none;
+      opacity: 0.5;
     }
+    30%,
+    60%,
+    65%,
+    70%,
+    75%,
+    100% {
+      border: solid 2px;
+      box-shadow: 0 0 0.1vh 0.4vh #d66eff, 0 0 0.4vh 0.6vh #ca45ff,
+        0 0 4vh 0.4vh #bc13fe, inset 0 0 1.5vh 0.4vh #bc13fe,
+        inset 0 0 0.4vh 0.2vh #ca45ff, inset 0 0 0.5vh 0.2vh #d66eff;
+      opacity: 1;
+    }
+  }
 }
 
-@mixin textColorChange{
-    animation-name: textColorChange;
-    animation-duration: 1s;
-    @keyframes TextColorChange{
-        5%,10%,15%,20%,40%,50%,80%,90%{
-            
-            text-shadow: none;
-            
-        }
-        30%,60%,65%,70%,75%, 100%{
-            text-shadow: 
-            .1vh 0vh .25vh #f8e7ff, 
-    
-            .1vh 0vh 0vh  #ffcdcd, 
-            .1vh 0vh .1vh #ffa6a6, 
-            .1vh 0vh 2vh #ff8b8b, 
-    
-            .1vh 0vh 1vh #ff6767, 
-            .1vh 0vh 5vh #ff5656, 
-            .1vh 0vh 10vh #ff4242;;
-            
-        }
-        
+@mixin textColorChange {
+  animation-name: textColorChange;
+  animation-duration: 1s;
+  @keyframes TextColorChange {
+    5%,
+    10%,
+    15%,
+    20%,
+    40%,
+    50%,
+    80%,
+    90% {
+      text-shadow: none;
     }
+    30%,
+    60%,
+    65%,
+    70%,
+    75%,
+    100% {
+      text-shadow: 0.1vh 0vh 0.25vh #f8e7ff, 0.1vh 0vh 0vh #ffcdcd,
+        0.1vh 0vh 0.1vh #ffa6a6, 0.1vh 0vh 2vh #ff8b8b, 0.1vh 0vh 1vh #ff6767,
+        0.1vh 0vh 5vh #ff5656, 0.1vh 0vh 10vh #ff4242;
+    }
+  }
 }

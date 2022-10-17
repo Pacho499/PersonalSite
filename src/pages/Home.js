@@ -5,6 +5,7 @@ import universApp from "../images/universApp.png";
 import convertitore from "../images/Convertitore.png";
 import fakeInsta from "../images/fakeInsta.png";
 import ImageSlider from "../components/ImageSlider";
+import personalSite from "../images/personalSite.png";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import Footer from "../components/Footer";
@@ -29,6 +30,12 @@ const Home = () => {
       title: "Instagram Fake",
       gitLink: "https://github.com/Pacho499/Fake-Instagram",
       siteLink: null,
+    },
+    {
+      url: personalSite,
+      title: "Sito web personale",
+      gitLink: "https://github.com/Pacho499/PersonalSite",
+      siteLink: "https://lorenzopalumbo.netlify.app/",
     },
   ];
   // logic contact section
