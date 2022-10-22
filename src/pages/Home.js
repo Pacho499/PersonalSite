@@ -4,6 +4,7 @@ import me from "../images/me.png";
 import universApp from "../images/universApp.png";
 import convertitore from "../images/Convertitore.png";
 import fakeInsta from "../images/fakeInsta.png";
+import setteMezzo from "../images/setteMezzo.png";
 import ImageSlider from "../components/ImageSlider";
 import personalSite from "../images/personalSite.png";
 import emailjs from "@emailjs/browser";
@@ -36,6 +37,12 @@ const Home = () => {
       title: "Sito web personale",
       gitLink: "https://github.com/Pacho499/PersonalSite",
       siteLink: "https://lorenzopalumbo.netlify.app/",
+    },
+    {
+      url: setteMezzo,
+      title: "Sette e mezzo",
+      gitLink: "https://github.com/Pacho499/SetteMezzo",
+      siteLink: "https://settemezzo.netlify.app",
     },
   ];
   // logic contact section
@@ -144,6 +151,7 @@ const Home = () => {
               <li>C</li>
               <li>REACT</li>
               <li>SASS</li>
+              <li>BOOTSTRAP</li>
             </ul>
           </div>
           <div id="projectContainer">
