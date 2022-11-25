@@ -8,6 +8,7 @@ import setteMezzo from "../images/setteMezzo.png";
 import ImageSlider from "../components/ImageSlider";
 import personalSite from "../images/personalSite.png";
 import emailjs from "@emailjs/browser";
+import leagueOfWiki from '../images/leagueOfWiki.png'
 import { useRef, useState } from "react";
 import Footer from "../components/Footer";
 import Spinner from "../components/Spinner";
@@ -43,6 +44,12 @@ const Home = () => {
       title: "Sette e mezzo",
       gitLink: "https://github.com/Pacho499/SetteMezzo",
       siteLink: "https://settemezzo.netlify.app",
+    },
+    {
+      url: leagueOfWiki,
+      title: "League of wiki",
+      gitLink: "https://github.com/Pacho499/league",
+      siteLink: "https://leagueofwiki.netlify.app/",
     },
   ];
   // logic contact section
