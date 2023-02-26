@@ -1,6 +1,5 @@
 import "../style/Home.scss";
 import Header from "../components/Header";
-import me from "../images/me.png";
 import universApp from "../images/universApp.png";
 import convertitore from "../images/Convertitore.png";
 import fakeInsta from "../images/fakeInsta.png";
