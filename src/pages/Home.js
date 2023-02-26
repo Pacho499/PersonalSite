@@ -109,7 +109,7 @@ const Home = () => {
       <section id="hero">
         <div id="heroContainer">
           <div classname="imgContainer">
-            <img height="400px" src={me} alt="" />
+            <img height='400px' src={process.env.PUBLIC_URL + '/images/me.png'} alt="Example" />
           </div>
           <div className="title">
             <h1>Lorenzo Palumbo</h1>
