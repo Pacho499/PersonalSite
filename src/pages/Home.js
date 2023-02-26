@@ -1,52 +1,48 @@
 import "../style/Home.scss";
 import Header from "../components/Header";
-import me from "../images/me.png";
-import universApp from "../images/universApp.png";
-import convertitore from "../images/Convertitore.png";
-import fakeInsta from "../images/fakeInsta.png";
-import setteMezzo from "../images/setteMezzo.png";
 import ImageSlider from "../components/ImageSlider";
-import personalSite from "../images/personalSite.png";
 import emailjs from "@emailjs/browser";
-import leagueOfWiki from '../images/leagueOfWiki.png'
 import { useRef, useState } from "react";
 import Footer from "../components/Footer";
 import Spinner from "../components/Spinner";
 const Home = () => {
+
+  const url = process.env.PUBLIC_URL
+
   // logic Skills section
   const slides = [
     {
-      url: universApp,
+      url: url + ('images/universApp.png'),
       title: "Clone sito UniverApp",
       gitLink: "https://github.com/Pacho499/Universapp-test-css",
       siteLink: "https://fakeuniversapp.netlify.app/",
     },
     {
-      url: convertitore,
+      url: url + ('images/Convertitore.png'),
       title: "Convertitore di valute",
       gitLink: "https://github.com/Pacho499/Convertitore",
       siteLink: "https://valueconverterlorenzopalumbo.netlify.app/index.html",
     },
     {
-      url: fakeInsta,
+      url: url + ('images/fakeInsta.png'),
       title: "Instagram Fake",
       gitLink: "https://github.com/Pacho499/Fake-Instagram",
       siteLink: null,
     },
     {
-      url: personalSite,
+      url: url + ('/images/personalSite.png'),
       title: "Sito web personale",
       gitLink: "https://github.com/Pacho499/PersonalSite",
       siteLink: "https://lorenzopalumbo.netlify.app/",
     },
     {
-      url: setteMezzo,
+      url: url + ('/images/setteMezzo.png'),
       title: "Sette e mezzo",
       gitLink: "https://github.com/Pacho499/SetteMezzo",
       siteLink: "https://settemezzo.netlify.app",
     },
     {
-      url: leagueOfWiki,
+      url: url + ('/images/leagueOfWiki.png'),
       title: "League of wiki",
       gitLink: "https://github.com/Pacho499/league",
       siteLink: "https://leagueofwiki.netlify.app/",
@@ -109,7 +105,7 @@ const Home = () => {
       <section id="hero">
         <div id="heroContainer">
           <div classname="imgContainer">
-            <img height="400px" src={me} alt="" />
+            <img height="400px" src={url + '/images/me.png'} alt="" />
           </div>
           <div className="title">
             <h1>Lorenzo Palumbo</h1>

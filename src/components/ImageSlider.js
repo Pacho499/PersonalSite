@@ -2,11 +2,9 @@ import { useState } from "react";
 import "../style/ImageSlider.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import git from "../images/git.png";
-import www from "../images/www.jpg";
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const url = process.env.PUBLIC_URL
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
@@ -32,7 +30,7 @@ const ImageSlider = ({ slides }) => {
           target="_blank"
           rel="noreferrer"
         >
-          <img height="50px" src={www} alt="" />
+          <img height="50px" src={url + ('/images/www.jpg')} alt="" />
         </a>
       );
     }
@@ -60,7 +58,7 @@ const ImageSlider = ({ slides }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <img height="50px" src={git} alt="" />
+            <img height="50px" src={url + ('/images/git.png')} alt="" />
           </a>
           {wwwLink()}
         </div>

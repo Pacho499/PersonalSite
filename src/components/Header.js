@@ -1,10 +1,10 @@
-import logo from "../images/logo.png";
 import "../style/Header.scss";
 import CV from "../CVPortfolio.pdf";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 const Header = () => {
+  const url = process.env.PUBLIC_URL
   const [hamburgerMenu, setHamburgerMenu] = useState(true);
   const openMenu = () => {
     setHamburgerMenu(!hamburgerMenu);
@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div id="headerContainer">
       <div className="logo">
-        <img height="100px" src={logo} alt="logo" />
+        <img height="100px" src={url + ('/images/logo.png')} alt="logo" />
       </div>
       <div className="linkContainer">
         <ul className="menu">
