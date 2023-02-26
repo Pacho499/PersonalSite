@@ -1,5 +1,6 @@
 import "../style/Home.scss";
 import Header from "../components/Header";
+import me from "../images/me.png";
 import universApp from "../images/universApp.png";
 import convertitore from "../images/Convertitore.png";
 import fakeInsta from "../images/fakeInsta.png";
@@ -108,7 +109,7 @@ const Home = () => {
       <section id="hero">
         <div id="heroContainer">
           <div classname="imgContainer">
-            <img height='400px' src={process.env.PUBLIC_URL + '/images/me.png'} alt="Example" />
+            <img height="400px" src={me} alt="" />
           </div>
           <div className="title">
             <h1>Lorenzo Palumbo</h1>

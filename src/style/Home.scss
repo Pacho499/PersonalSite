@@ -24,13 +24,6 @@
       @include smartphone {
         grid-template-columns: 1fr;
       }
-      .imgContainer {
-        background-image: 'url("/public/images/me.png")';
-        background-repeat: no-repeat;
-        background-position: center;
-        width:400px;
-        height: 400px;
-      }
       .title {
         padding: 20px;
         h1 {
