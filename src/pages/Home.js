@@ -1,4 +1,4 @@
-import "../style/Home.scss";
+import '../style/Home.scss'
 import Header from "../components/Header";
 import ImageSlider from "../components/ImageSlider";
 import emailjs from "@emailjs/browser";
