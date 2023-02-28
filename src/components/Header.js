@@ -1,4 +1,3 @@
-import "../style/Header.scss";
 import CV from "../CVPortfolio.pdf";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,19 +9,19 @@ const Header = () => {
     setHamburgerMenu(!hamburgerMenu);
   };
   return (
-    <div id="headerContainer">
-      <div className="logo">
-        <img height="100px" src={url + ('/images/logo.png')} alt="logo" />
+    <div className='flex fixed w-full top-0 z-10 justify-between border-b-2 border-orange bg-black'>
+      <div className="mb-4">
+        <img className="h-24 ml-16 mt-4" height="100px" src={url + ('/images/logo.png')} alt="logo" />
       </div>
-      <div className="linkContainer">
-        <ul className="menu">
-          <a href="#skills">Competenze</a>
-          <a href="#Contact">Contattami</a>
-          <a href={CV} download="LorenzoPalumboCV">
+      <div className="flex items-center text-2xl">
+        <ul className="flex justify-around w-[600px]">
+          <a className="MenuButton" href="#skills">Competenze</a>
+          <a className="MenuButton" href="#Contact">Contattami</a>
+          <a className="MenuButton" href={CV} download="LorenzoPalumboCV">
             Scarica CV
           </a>
         </ul>
-        {hamburgerMenu ? (
+        {/* {hamburgerMenu ? (
           <FontAwesomeIcon
             id="hamburgerMenu"
             style={{ paddingRight: "20px" }}
@@ -48,7 +47,7 @@ const Header = () => {
               Scarica CV
             </a>
           </ol>
-        )}
+        )} */}
       </div>
     </div>
   );
