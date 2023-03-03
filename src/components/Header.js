@@ -9,7 +9,7 @@ const Header = () => {
     setHamburgerMenu(!hamburgerMenu);
   };
   return (
-    <div className='flex fixed w-full top-0 z-10 justify-between border-b-2 border-orange bg-black'>
+    <div className='flex fixed w-full top-0 z-10 justify-between border-b-4 border-pink bg-main'>
       <div className="mb-4">
         <img className="h-24 ml-16 mt-4" height="100px" src={url + ('/images/logo.png')} alt="logo" />
       </div>

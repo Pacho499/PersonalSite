@@ -2,7 +2,7 @@ import '../style/Footer.scss'
 const Footer = () => {
   const url = process.env.PUBLIC_URL
   return (
-    <div className="border-orange border-t-4 bg-main flex justify-around items-center py-8">
+    <div className="border-pink border-t-4 text-black bg-main flex justify-around items-center py-8">
       <div className="contacts">
         <h5 className='text-2xl mb-2'>Contatti</h5>
         <p className='text-xl mb-2'>lorenzopalumbo.dev@gmail.com</p>
