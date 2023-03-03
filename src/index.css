@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,8 +9,7 @@
   border-radius: 20px;
   border-color: #F7C8E0;;
   padding: 10px;
-  font-weight: 500;
-  
+  font-weight: 900;
 }
 
 .MenuButton:hover{
@@ -25,8 +25,8 @@
 
 body, html {
   margin: 0;
-  font-family: 'Big Shoulders Stencil Display', cursive;
-  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:'Shantell Sans', 'Big Shoulders Stencil Display', cursive;
+  font-family:'Shantell Sans', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

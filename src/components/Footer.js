@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="border-pink border-t-4 text-black bg-main flex justify-around items-center py-8">
       <div className="contacts">
-        <h5 className='text-2xl mb-2'>Contatti</h5>
+        <h5 className='text-2xl mb-2 font-bold'>Contatti</h5>
         <p className='text-xl mb-2'>lorenzopalumbo.dev@gmail.com</p>
         <div className="flex justify-around">
           <a
