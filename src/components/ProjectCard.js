@@ -31,7 +31,7 @@ const ProjectCard = ({pageData}) => {
             </a>
           </div>
 
-          <div className='linkButton ml-3'>
+          <div className='linkButton ml-3 flex items-center'>
             {webNotAvaiable ? <p className='flex'>Non disponibile</p> : <a href={pageData.www} target='_blank' rel='noreferrer' className='flex items-center'>
               <p className='mr-2'>Sito Web</p>
               <img style={{height: '2rem'}} src={url + '/images/www.png'} alt='Web logo'/>
