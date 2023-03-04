@@ -1,6 +1,5 @@
 import {Link} from 'react-router-dom';
 const ProjectCard = ({pageData }) => {
-  console.log(pageData)
   const url = process.env.PUBLIC_URL;
   const webNotAvaiable = pageData.title === 'Clone di instagram' ? true : false
   return (

@@ -17,7 +17,20 @@ const PagesDatas = [
     'Come sviluppatore front-end, ho lavorato alla creazione di oddMonitor, un tool per scommettitori professionisti. La mia principale responsabilità era quella di creare interfacce utente interattive e reattive per gli utenti',
     "Come sviluppatore front-end, lavoro alla creazione di oddMonitor, un tool per scommettitori professionisti utilizzando React.js, Tailwind e TypeScript. La mia principale responsabilità è quella di creare interfacce utente interattive e reattive per gli utenti, utilizzando componenti di React e CSS di Tailwind per l'aspetto visivo del sito. Utilizzo TypeScript per garantire una maggiore robustezza e chiarezza del codice, in quanto ci permette di definire tipi di dati per le proprietà e le funzioni dei componenti React. Lavoro in stretta collaborazione con il team di sviluppo back-end per assicurare che le funzionalità del sito siano state implementate correttamente e che l'interfaccia utente si integri perfettamente con le funzionalità sottostanti, dando anche una mano in caso di necessità. Collaboro anche con il team di design per assicurarmi che il sito sia stato sviluppato in linea con i loro standard di design.",
     true,
-    [],
+    [
+      {
+        description:'ciao',
+        url: '/images/leagueOfWiki.png'
+      },
+      {
+        description:'ciao',
+        url: '/images/Convertitore.png'
+      },
+      {
+        description:'ciao 3',
+        url: 'images/fakeInsta.png'
+      }
+    ],
     '',
     '',
   ),
@@ -27,7 +40,20 @@ const PagesDatas = [
     "Il progetto League of wiki utilizza l'API di League of Legends per creare un sito dedicato ai giocatori. Il sito fornisce dettagli sui personaggi, il rank e le ultime partite dei giocatori.",
     "Come sviluppatore front-end, lavoro alla creazione di oddMonitor, un tool per scommettitori professionisti utilizzando React.js, Tailwind e TypeScript. La mia principale responsabilità è quella di creare interfacce utente interattive e reattive per gli utenti, utilizzando componenti di React e CSS di Tailwind per l'aspetto visivo del sito. Utilizzo TypeScript per garantire una maggiore robustezza e chiarezza del codice, in quanto ci permette di definire tipi di dati per le proprietà e le funzioni dei componenti React. Lavoro in stretta collaborazione con il team di sviluppo back-end per assicurare che le funzionalità del sito siano state implementate correttamente e che l'interfaccia utente si integri perfettamente con le funzionalità sottostanti, dando anche una mano in caso di necessità. Collaboro anche con il team di design per assicurarmi che il sito sia stato sviluppato in linea con i loro standard di design.",
     false,
-    [],
+    [
+      {
+        description:'ciao',
+        url: '/images/leagueOfWiki.png'
+      },
+      {
+        description:'ciao',
+        url: '/images/Convertitore.png'
+      },
+      {
+        description:'ciao 3',
+        url: 'images/fakeInsta.png'
+      }
+    ],
     'https://leagueofwiki.netlify.app/',
     'https://github.com/Pacho499/league',
   ),

@@ -19,11 +19,6 @@ const Home = () => {
       personalProject.push(pagesData[page])
     }
   }
-
-  const renderWork = () => {
-    
-  }
-  
     // logic contact section
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(false);
@@ -137,43 +132,9 @@ const Home = () => {
           Portfolio
         </h1>
         <div className='grid grid-cols-3 gap-4'>
-        {personalProject.map((work, index) => { 
+          {personalProject.map((work, index) => { 
             return (<ProjectCard key={index} pageData={work}/>)
           })}
-          {/* <ProjectCard
-            title={'League of Wiki'}
-            languages={['React.js','Git','Netlify','Bootstrap','TypeScript','SASS',]}
-            bio={"Il progetto League of wiki utilizza l'API di League of Legends per creare un sito dedicato ai giocatori. Il sito fornisce dettagli sui personaggi, il rank e le ultime partite dei giocatori."}
-            www={'https://leagueofwiki.netlify.app/'}
-            gitHub={'https://github.com/Pacho499/league'}
-          />
-          <ProjectCard
-            title={'Sette e mezzo'}
-            languages={['React.js', 'Git', 'Netlify', 'Bootstrap', 'SASS']}
-            bio={'Il progetto Sette e Mezzo è una semplice riproduzione del gioco classico di carte del sette e mezzo.'}
-            www={'https://settemezzo.netlify.app/'}
-            gitHub={'https://github.com/Pacho499/SetteMezzo'}
-          />
-          <ProjectCard
-            title={'Clone di instagram'}
-            languages={['React.js', 'Firebase', 'Git', 'API']}
-            bio={'Il progetto creato per il corso UniversApp punta alla creazione di un clone di Instagram dando la possibilità di gestire il profilo, pubblicare foto e visualizzare una home dinamica.'}
-            gitHub={'https://github.com/Pacho499/Fake-Instagram'}
-          />
-          <ProjectCard
-            title={'Convertitore di valute'}
-            languages={['HTML', 'SASS', 'javascript', 'API']}
-            bio={'Un progetto che utilizza una Rest Api per ottenere i cambi di valuta in tempo reale.'}
-            gitHub={'https://github.com/Pacho499/Convertitore'}
-            www={'https://valueconverterlorenzopalumbo.netlify.app/index.html'}
-          />
-          <ProjectCard
-            title={'Clone sito UniversApp'}
-            languages={['HTML', 'SASS']}
-            bio={'Primo progetto del corso in cui ho sperimentato le basi dello sviluppo web. Il sito è un clone della homepage di universapp.'}
-            gitHub={'https://github.com/Pacho499/Universapp-test-css'}
-            www={'https://fakeuniversapp.netlify.app/'}
-          /> */}
         </div>
       </section>
       {/* contact section */}
