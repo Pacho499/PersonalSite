@@ -3,6 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.imgDescription-hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.imgDescription-hidden-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .MenuButton{
   border-width: 4px;
   color: #DFFFD8;
@@ -46,6 +55,7 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
   background-color: #DFFFD8;
   scroll-behavior: smooth;
+  color:#3c4141
 }
 
 code {

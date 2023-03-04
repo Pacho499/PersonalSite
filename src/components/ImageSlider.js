@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const ImageSlider = ({imagesData, git, www}) => {
+const ImageSlider = ({imagesData, git, www, work}) => {
   const url = process.env.PUBLIC_URL;
   const [currentImage, setCurrentImage] = useState(0);
   const images = [];
@@ -12,15 +12,14 @@ const ImageSlider = ({imagesData, git, www}) => {
     setCurrentImage(num);
   };
   return (
-    <div className='bg-pink p-4 rounded-lg border-4 border-main'>
+    <div className='bg-pink p-4 rounded-lg border-4 border-main mb-10'>
       <div className='flex flex-col items-center'>
         <div className='flex'>
-          <div className='w-3/4'>
+          <div className='w-3/4 h-90'>
             <img
               className='rounded-lg border-4 border-green'
               src={images[currentImage]}
               alt=''
-              
             />
             <div className='flex justify-center'>
               {images.map((value, index) => {
@@ -43,49 +42,51 @@ const ImageSlider = ({imagesData, git, www}) => {
             </div>
           </div>
           <div className='w-1/4 text-center relative  border-4 border-green rounded-lg bg-secondary text-black ml-4'>
-            <div>
-              <h1 className='font-bold text-3xl'>Descrizione</h1>
-              <p>{imagesData[currentImage].description}</p>
+            <div className='h-3/4 overflow-y-scroll imgDescription-hidden-scrollbar'>
+              <h1 className='font-bold text-3xl mt-4'>Descrizione immagine</h1>
+              <p className='mt-4 text-left mx-4 text-lg'>{imagesData[currentImage].description}</p>
             </div>
-            <div className='absolute bottom-6 left-16'>
-              <h2 className='text-2xl font-bold text-black mt-4'>Link</h2>
-              <div className='flex justify-center items-center'>
-                <div className='linkButton ml-3'>
-                  <a
-                    className='flex items-center'
-                    href={git}
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <p className='mr-2'>Git Hub</p>
-                    <img
-                      style={{height: '2rem'}}
-                      src={url + '/images/git.png'}
-                      alt='Git Hub Logo'
-                    />
-                  </a>
-                </div>
-                <div className='linkButton ml-3'>
-                  {www ? (
-                    <p>Non disponibile</p>
-                  ) : (
+            {work ? null : (
+              <div className='absolute bottom-6 left-16'>
+                <h2 className='text-2xl font-bold text-black mt-4'>Link</h2>
+                <div className='flex justify-center items-center'>
+                  <div className='linkButton ml-3'>
                     <a
-                      href={www}
+                      className='flex items-center'
+                      href={git}
                       target='_blank'
                       rel='noreferrer'
-                      className='flex items-center'
                     >
-                      <p className='mr-2'>Sito Web</p>
+                      <p className='mr-2'>Git Hub</p>
                       <img
                         style={{height: '2rem'}}
-                        src={url + '/images/www.png'}
-                        alt='Web logo'
+                        src={url + '/images/git.png'}
+                        alt='Git Hub Logo'
                       />
                     </a>
-                  )}
+                  </div>
+                  <div className='linkButton ml-3'>
+                    {www ? (
+                      <p>Non disponibile</p>
+                    ) : (
+                      <a
+                        href={www}
+                        target='_blank'
+                        rel='noreferrer'
+                        className='flex items-center'
+                      >
+                        <p className='mr-2'>Sito Web</p>
+                        <img
+                          style={{height: '2rem'}}
+                          src={url + '/images/www.png'}
+                          alt='Web logo'
+                        />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

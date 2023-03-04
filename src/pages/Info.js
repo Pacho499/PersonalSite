@@ -20,14 +20,12 @@ const Info = () => {
             {/* body */}
            <div className="w-[90%] m-auto mt-40">
             <h1 className="text-3xl mb-10 font-bold text-black">{props.project}</h1>
-                <ImageSlider imagesData={state.images} git={state.git} www={state.www}/>
-            
-            <h2 className="text-center mt-20 mb-10 text-3xl font-bold text-black">Descrzione</h2>
-            <div className="p-2 bg-pink border-4 border-main mb-10 rounded-lg" >
+            <div className="p-4 bg-pink border-4 border-main mb-10 rounded-lg" >
                 <p  className="text-xl text-black">
                     {state.description}  
                 </p>  
             </div>
+                <ImageSlider imagesData={state.images} git={state.git} www={state.www} work={state.work}/>
         </div>
          <Footer/>
         </div>
