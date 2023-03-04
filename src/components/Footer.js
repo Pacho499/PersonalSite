@@ -1,4 +1,3 @@
-import '../style/Footer.scss'
 const Footer = () => {
   const url = process.env.PUBLIC_URL
   return (

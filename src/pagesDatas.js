@@ -19,17 +19,21 @@ const PagesDatas = [
     true,
     [
       {
-        description:'ciao',
-        url: '/images/leagueOfWiki.png'
+        description:'Questa è la rappresentazione della prima homepage del progetto essa era senza stile perché si stava puntando a controllare che tutte le feature funzionasserò nel modo corretto',
+        url: 'images/monitor1.0.png'
       },
       {
-        description:'ciao',
-        url: '/images/Convertitore.png'
+        description:'Rappresentazione della home dopo le direttive del team di design, tutto implementato con Tailwind, in questo screen possiamo notare da subito come la home sia più godibile',
+        url: 'images/monitor2.0.png'
       },
       {
-        description:'ciao 3',
-        url: 'images/fakeInsta.png'
-      }
+        description:'Rappresentazione del dettaglio evento prima della modifica, anche in questo caso si puntava a qualcosa di semplice senza guardare il lato estetico del prodotto',
+        url: '/images/dettaglioEvento1.0.png'
+      },
+      {
+        description:'Rappresentazione del dattagio evento dopo le direttive, ovviamente abbiamo cercato di dare lo stesso stile presente per la Home dopo le direttive del team di desing',
+        url: '/images/dettaglioEvento2.0.png'
+      },
     ],
     '',
     '',

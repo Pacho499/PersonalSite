@@ -1,6 +1,6 @@
 import { useLocation, useParams, Link } from "react-router-dom"
 import Footer from "../components/Footer"
-import ImageSlider2 from "../components/ImageSlider2"
+import ImageSlider from "../components/ImageSlider"
 const Info = () => {
     const props = useParams()
     const location = useLocation()
@@ -20,7 +20,7 @@ const Info = () => {
             {/* body */}
            <div className="w-[90%] m-auto mt-40">
             <h1 className="text-3xl mb-10 font-bold text-black">{props.project}</h1>
-                <ImageSlider2 imagesData={state.images} git={state.git} www={state.www}/>
+                <ImageSlider imagesData={state.images} git={state.git} www={state.www}/>
             
             <h2 className="text-center mt-20 mb-10 text-3xl font-bold text-black">Descrzione</h2>
             <div className="p-2 bg-pink border-4 border-main mb-10 rounded-lg" >
