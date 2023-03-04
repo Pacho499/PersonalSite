@@ -66,7 +66,7 @@ const ImageSlider = ({imagesData, git, www, work}) => {
                     </a>
                   </div>
                   <div className='linkButton ml-3'>
-                    {www ? (
+                    {www === '' ? (
                       <p>Non disponibile</p>
                     ) : (
                       <a

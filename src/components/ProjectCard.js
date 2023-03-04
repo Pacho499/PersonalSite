@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
-const ProjectCard = ({pageData }) => {
+const ProjectCard = ({pageData}) => {
   const url = process.env.PUBLIC_URL;
-  const webNotAvaiable = pageData.title === 'Clone di instagram' ? true : false
+  const webNotAvaiable = pageData.title === 'Clone di Instagram' ? true : false
   return (
     <div className='relative h-full border-pink border-4 w-full m-2 rounded-lg p-6 bg-secondary text-black'>
       <h1 className='text-3xl font-bold'>{pageData.title}</h1>
