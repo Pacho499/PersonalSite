@@ -5,17 +5,32 @@ import Footer from '../components/Footer';
 import Spinner from '../components/Spinner';
 import Input from '../components/Input';
 import ProjectCard from '../components/ProjectCard';
+import pagesData from '../pagesDatas'
 const Home = () => {
   const url = process.env.PUBLIC_URL;
+  
+  const works = []
+  const personalProject = []
 
-  // logic contact section
-  const [error, setError] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [done, setDone] = useState(false);
-  const [name, setName] = useState('');
-  const [message, setMessage] = useState('');
-  const [email, setEmail] = useState('');
+  for (let page in pagesData){
+    if (pagesData[page].work === true){
+       works.push(pagesData[page])
+    }else{
+      personalProject.push(pagesData[page])
+    }
+  }
 
+  const renderWork = () => {
+    
+  }
+  
+    // logic contact section
+    const [error, setError] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [done, setDone] = useState(false);
+    const [name, setName] = useState('');
+    const [message, setMessage] = useState('');
+    const [email, setEmail] = useState('');
   const handleName = (e) => {
     setName(e.target.value);
   };
@@ -111,12 +126,9 @@ const Home = () => {
           Esperienze lavorative
         </h1>
         <div className='w-1/3'>
-          <ProjectCard
-            title={'Odd Monitor'}
-            languages={['Typescript','React.js','Tailwind','GitLab','Node.js',]}
-            bio={'Come sviluppatore front-end, ho lavorato alla creazione di oddMonitor, un tool per scommettitori professionisti. La mia principale responsabilità era quella di creare interfacce utente interattive e reattive per gli utenti'}
-            work={true}
-          />
+          {works.map((work, index) => { 
+            return (<ProjectCard key={index} pageData={work}/>)
+          })}
         </div>
       </section>
       {/* portfolio section */}
@@ -125,7 +137,10 @@ const Home = () => {
           Portfolio
         </h1>
         <div className='grid grid-cols-3 gap-4'>
-          <ProjectCard
+        {personalProject.map((work, index) => { 
+            return (<ProjectCard key={index} pageData={work}/>)
+          })}
+          {/* <ProjectCard
             title={'League of Wiki'}
             languages={['React.js','Git','Netlify','Bootstrap','TypeScript','SASS',]}
             bio={"Il progetto League of wiki utilizza l'API di League of Legends per creare un sito dedicato ai giocatori. Il sito fornisce dettagli sui personaggi, il rank e le ultime partite dei giocatori."}
@@ -158,7 +173,7 @@ const Home = () => {
             bio={'Primo progetto del corso in cui ho sperimentato le basi dello sviluppo web. Il sito è un clone della homepage di universapp.'}
             gitHub={'https://github.com/Pacho499/Universapp-test-css'}
             www={'https://fakeuniversapp.netlify.app/'}
-          />
+          /> */}
         </div>
       </section>
       {/* contact section */}
