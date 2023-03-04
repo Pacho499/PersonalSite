@@ -22,7 +22,7 @@ const ImageSlider = ({imagesData, git, www, work}) => {
               alt=''
             />
             <div className='flex justify-center'>
-              {images.map((value, index) => {
+              {images.map((_,index) => {
                 return (
                   <div
                     key={index}
@@ -42,7 +42,7 @@ const ImageSlider = ({imagesData, git, www, work}) => {
             </div>
           </div>
           <div className='w-1/4 text-center relative  border-4 border-green rounded-lg bg-secondary text-black ml-4'>
-            <div className='h-3/4 overflow-y-scroll imgDescription-hidden-scrollbar'>
+            <div className={work ? '' : 'h-3/4 overflow-y-scroll imgDescription-hidden-scrollbar'}>
               <h1 className='font-bold text-3xl mt-4'>Descrizione immagine</h1>
               <p className='mt-4 text-left mx-4 text-lg'>{imagesData[currentImage].description}</p>
             </div>
