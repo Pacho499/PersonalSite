@@ -16,6 +16,19 @@
   border-color: #DFFFD8;
   color: #F7C8E0;
 }
+
+.linkButton{
+  background-color: #F7C8E0;
+  color: #3c4141;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  text-align: center;
+}
+.linkButton:hover{
+  background-color: #DFFFD8;
+}
+
 *{
   margin: 0px;
   padding: 0px;
