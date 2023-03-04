@@ -10,9 +10,9 @@ const Info = () => {
         <div>
             {/* Header */}
             <div className='flex fixed w-full top-0 z-10 justify-between border-b-4 border-pink bg-main'>
-                <div className="mb-4">
+                <Link to={'/'} className="mb-4">
                     <img className="h-24 ml-16 mt-4" height="100px" src={url + ('/images/logo.png')} alt="logo" />
-                </div>
+                </Link>
                 <Link to='/' className="flex items-center mr-10">
                     <button className="MenuButton">Torna alla home</button>
                 </Link>

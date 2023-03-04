@@ -96,9 +96,38 @@ const PagesDatas = [
     'Clone di Instagram',
     ['React.js', 'Firebase', 'Git', 'API'],
     'Il progetto creato per il corso UniversApp punta alla creazione di un clone di Instagram dando la possibilità di gestire il profilo, pubblicare foto e visualizzare una home dinamica.',
-    "Come sviluppatore front-end, lavoro alla creazione di oddMonitor, un tool per scommettitori professionisti utilizzando React.js, Tailwind e TypeScript. La mia principale responsabilità è quella di creare interfacce utente interattive e reattive per gli utenti, utilizzando componenti di React e CSS di Tailwind per l'aspetto visivo del sito. Utilizzo TypeScript per garantire una maggiore robustezza e chiarezza del codice, in quanto ci permette di definire tipi di dati per le proprietà e le funzioni dei componenti React. Lavoro in stretta collaborazione con il team di sviluppo back-end per assicurare che le funzionalità del sito siano state implementate correttamente e che l'interfaccia utente si integri perfettamente con le funzionalità sottostanti, dando anche una mano in caso di necessità. Collaboro anche con il team di design per assicurarmi che il sito sia stato sviluppato in linea con i loro standard di design.",
+    "Il progetto puntava a creare un clone di Instagram, realizzato come compito per il corso di Universapp. È stato creato utilizzando React.js, Firebase per la gestione del database e dell'autenticazione e Sass per lo stile. La sezione 'Esplora' utilizza diverse API per generare foto e nomi utenti casuali, al fine di simulare al meglio l'app originale. Questo permette di avere una visualizzazione dinamica e sempre nuova di post di diversi utenti. React.js è stato utilizzato per creare diverse sezioni del sito, come la sezione 'Esplora', che mostra i post più popolari e recenti, e la sezione 'Profilo', che presenta informazioni sul proprietario del profilo e i suoi post oltre alla possibilità di cambiare nome profilo e descrizione del profilo. Inoltre, è stata implementata la funzionalità di pubblicare post e mettere like. Per quanto riguarda l'aspetto estetico, è stato utilizzato Sass per creare lo stile del sito, garantendo un'esperienza utente piacevole e coerente.",
     false,
-    [],
+    [
+      {
+        description:"Rappresentazione della schermata di login di Instagram, proprio come il sito originale il bottone accedi diventerà cliccabile solo nel momento in cui verrano rispettati determinati parametri di lunghezza degli input, inoltre abbiamo la possibilità di vedere la password che stiamo inserendo. Cliccando sul bottone 'iscriviti' avremo la possibilità di navigare al SignUp",
+        url: '/images/fakeInstaLogin.png'
+      },
+      {
+        description:"Rappresentazione del signUp di Instagram, proprio come il sito originale il bottone 'avanti' diventa attivo solo dopo che gli input avranno soddisfatto le condizioni richieste. Tutte le scritte riprendono quelle originali",
+        url: '/images/fakeInstaSignUp.png'
+      },
+      {
+        description:"Rappresentazione della sezione Home, essa è formata da una serie di post falsi creati tramite diverse api che generano nomi e immagini casuali, possiamo notare che un altra api è stata utilizzata per la sezione 'suggerimenti'. In alto troviamo la classica barra di instagram con le sezione home, direct, post, notifiche e profilo, possiamo notare che la sezione profilo è la nostra attuale immagine profilo.",
+        url: '/images/fakeInstaHome.png'
+      },
+      {
+        description:"Rappresentazione di una sezione profilo base, i follower e i profilo seguiti sono un numero fisso, abbiamo a disposizione pero il conteggio dei post ed il bottone 'Modifica Profilo' che ci permette di cambiare le impostazioni del nostro account",
+        url: '/images/fakeInstaBaseProfile.png'
+      },
+      {
+        description:"Rappresentazione della sezione modifica profilo, essa è formata da un semplice box in cui possiamo inserire tutti gli input per cambiare le nostre impostazioni, possiamo cambiare nome, nome Utente, bio e foto profilo proprio come sul sito originale.",
+        url: '/images/fakeInstaProfileSettings.png'
+      },
+      {
+        description:"Rappresentazione della home dopo aver caricato un post, proprio come nel sito originale dopo aver caricato una foto verremo condotti alla home di instagram e vedremo come primo post la foto appena caricata seguita da post fake. Se dovessimo cambiare o ricaricare la pagina avremo a disposizione altri post fake",
+        url: '/images/fakeInstaHomePost.png'
+      },
+      {
+        description:"Rappresentazione di un profilo dopo qualche post e aver caricato la nostra foto profilo. Possiamo notare che il valore dei post è salito e si basa effettivamente sui post caricati dal utente, inoltre notiamo come caricado una foto profilo anche l'header cambia avendo una miniatura della foto profilo dell'utente",
+        url: '/images/fakeInstaProfile.png'
+      },
+    ],
     '',
     'https://github.com/Pacho499/Fake-Instagram',
   ),
