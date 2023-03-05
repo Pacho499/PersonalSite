@@ -1,22 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&family=Cormorant+SC:wght@300&family=Raleway:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.imgDescription-hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.imgDescription-hidden-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.menu {
+  animation-duration: 1s;
+}
+
+@keyframes renderMenu {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 40vw;
+  }
+}
+
+/* Definizione della classe personalizzata con Tailwind */
+.menu {
+  animation-name: renderMenu;
+  animation-fill-mode: forwards;
+}
+
+.MenuButton{
+  border-width: 4px;
+  color: #DFFFD8;
+  border-radius: 20px;
+  border-color: #F7C8E0;;
+  padding: 10px;
+  font-weight: 900;
+}
+
+.MenuButton:hover{
+  border-color: #DFFFD8;
+  color: #F7C8E0;
+}
+
+.linkButton{
+  background-color: #F7C8E0;
+  color: #3c4141;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  text-align: center;
+}
+.linkButton:hover{
+  background-color: #DFFFD8;
+}
+
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   letter-spacing: 1px;
-  color: white;
 }
 
 body, html {
   margin: 0;
-  font-family: 'Big Shoulders Stencil Display', cursive;
-  font-family: 'Big Shoulders Stencil Display' 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:'Shantell Sans', 'Big Shoulders Stencil Display', cursive;
+  font-family:'Shantell Sans', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: #DFFFD8;
   scroll-behavior: smooth;
+  color:#3c4141
 }
 
 code {

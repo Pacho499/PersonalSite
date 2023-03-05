@@ -1,61 +1,31 @@
-import "../style/Home.scss";
-import Header from "../components/Header";
-import ImageSlider from "../components/ImageSlider";
-import emailjs from "@emailjs/browser";
-import { useRef, useState } from "react";
-import Footer from "../components/Footer";
-import Spinner from "../components/Spinner";
+import Header from '../components/Header';
+import emailjs from '@emailjs/browser';
+import {useRef, useState} from 'react';
+import Footer from '../components/Footer';
+import Spinner from '../components/Spinner';
+import Input from '../components/Input';
+import ProjectCard from '../components/ProjectCard';
+import pagesData from '../pagesDatas'
 const Home = () => {
+  const url = process.env.PUBLIC_URL;
+  
+  const works = []
+  const personalProject = []
 
-  const url = process.env.PUBLIC_URL
-
-  // logic Skills section
-  const slides = [
-    {
-      url: url + ('images/universApp.png'),
-      title: "Clone sito UniverApp",
-      gitLink: "https://github.com/Pacho499/Universapp-test-css",
-      siteLink: "https://fakeuniversapp.netlify.app/",
-    },
-    {
-      url: url + ('images/Convertitore.png'),
-      title: "Convertitore di valute",
-      gitLink: "https://github.com/Pacho499/Convertitore",
-      siteLink: "https://valueconverterlorenzopalumbo.netlify.app/index.html",
-    },
-    {
-      url: url + ('images/fakeInsta.png'),
-      title: "Instagram Fake",
-      gitLink: "https://github.com/Pacho499/Fake-Instagram",
-      siteLink: null,
-    },
-    {
-      url: url + ('/images/personalSite.png'),
-      title: "Sito web personale",
-      gitLink: "https://github.com/Pacho499/PersonalSite",
-      siteLink: "https://lorenzopalumbo.netlify.app/",
-    },
-    {
-      url: url + ('/images/setteMezzo.png'),
-      title: "Sette e mezzo",
-      gitLink: "https://github.com/Pacho499/SetteMezzo",
-      siteLink: "https://settemezzo.netlify.app",
-    },
-    {
-      url: url + ('/images/leagueOfWiki.png'),
-      title: "League of wiki",
-      gitLink: "https://github.com/Pacho499/league",
-      siteLink: "https://leagueofwiki.netlify.app/",
-    },
-  ];
-  // logic contact section
-  const [error, setError] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [done, setDone] = useState(false);
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
-  const [email, setEmail] = useState("");
-
+  for (let page in pagesData){
+    if (pagesData[page].work === true){
+       works.push(pagesData[page])
+    }else{
+      personalProject.push(pagesData[page])
+    }
+  }
+    // logic contact section
+    const [error, setError] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [done, setDone] = useState(false);
+    const [name, setName] = useState('');
+    const [message, setMessage] = useState('');
+    const [email, setEmail] = useState('');
   const handleName = (e) => {
     setName(e.target.value);
   };
@@ -70,7 +40,7 @@ const Home = () => {
   const sendEmail = async (e) => {
     e.preventDefault();
     setLoading(true);
-    if (email.trim() === "" || name.trim() === "" || message.trim() === "") {
+    if (email.trim() === '' || name.trim() === '' || message.trim() === '') {
       setError(true);
       setTimeout(() => {
         setLoading(false);
@@ -81,16 +51,16 @@ const Home = () => {
     } else {
       try {
         await emailjs.sendForm(
-          "service_sgrcj8b",
-          "my_personal_site",
+          'service_sgrcj8b',
+          'my_personal_site',
           form.current,
-          "MWltUA9z-5NWhGhsD"
+          'MWltUA9z-5NWhGhsD',
         );
         setLoading(false);
         setDone(true);
-        setEmail("");
-        setMessage("");
-        setName("");
+        setEmail('');
+        setMessage('');
+        setName('');
         setError(false);
       } catch (error) {
         console.log(error);
@@ -99,112 +69,123 @@ const Home = () => {
     }
   };
   return (
-    <div id="mainContainer">
+    <div>
       <Header />
       {/* hero section */}
-      <section id="hero">
-        <div id="heroContainer">
-          <div classname="imgContainer">
-            <img height="400px" src={url + '/images/me.png'} alt="" />
+      <section className='mt-40 w-[90%] m-auto'>
+        <div className='flex justify-around items-center text-center border-4 rounded-xl border-pink bg-secondary text-black px-10 max-laptopXS:flex-col'>
+          <div className='w-1/3 ml-10 flex max-laptopXS:justify-center max-laptopXS:w-full max-laptopXS:ml-0 max-laptopXS:mb-10'>
+            <img className='h-[400px]' src={url + '/images/me.png'} alt='' />
           </div>
-          <div className="title">
-            <h1>Lorenzo Palumbo</h1>
-            <h3>web developer</h3>
+          <div className='w-1/3 max-laptopXS:w-full'>
+            <h1 className='text-[2rem] font-black'>Lorenzo Palumbo</h1>
+            <h3 className='text-2xl'>Front-end Developer</h3>
+            <h3 className='text-2xl font-black mt-10'>Caratteristiche</h3>
+            <ul className='text-center mt-1 text-xl'>
+              <li>Motivazione</li>
+              <li>Passione</li>
+              <li>Costanza</li>
+            </ul>
           </div>
-          <div className="firstImpress">
-            <p>
-              Ciao sono Lorenzo, ho iniziato a studiare programmazione grazie ad{" "}
-              <a
-                rel="noreferrer"
-                href="https://universapp.tech/"
-                target="_blank"
-              >
-                UniversApp
-              </a>
-              , svoltando la mia carriera e aprendomi nuovi orizzonti lavorativi
+          <div className='w-1/3 text-2xl max-laptopXS:w-full'>
+            <p className='py-4'>
+              Sono un giovane appassionato di tecnologia da sempre. Ho scoperto
+              la mia passione per lo sviluppo web e ho deciso di intraprendere
+              un percorso per diventare front-end developer. Sono determinato a
+              sviluppare le mie capacità e a diventare un membro prezioso di un
+              team di sviluppo.
             </p>
           </div>
         </div>
-        <div className="infoContainer">
-          <h1>
+        <div className='mt-10 border-secondary bg-pink border-4 rounded-lg p-10 text-center'>
+          <h1 className='text-3xl text-main font-bold'>
             "Scegli un lavoro che ami e non dovrai lavorare neppure un giorno
             della tua vita"
           </h1>
-          <p>
-            Questo è stato il mio pensiero quando ho deciso di{" "}
-            <span>lasciare la mia precendente professione </span> per iniziare a
-            studiare programmazione, cercando di trasformare la mia{" "}
-            <span>passione in lavoro</span> per avere molte più soddisfazioni.{" "}
+          <p className='text-2xl mt-10 text-black'>
+            Questo è stato il mio pensiero quando ho deciso di lasciare la mia
+            precedente professione di barista.
             <br />
-            Attualmente mi occupo dello sviluppo web lato front-end e continuo a
-            studiare per poter diventare un full-stack developer
+            La mia esperienza lavorativa mi ha insegnato l'importanza della
+            flessibilità e della capacità di adattarsi a situazioni nuove e
+            impegnative. Sono convinto che queste competenze saranno utili nella
+            mia carriera come front-end developer, dove sarò impegnato a
+            imparare costantemente e a mettere in pratica le mie conoscenze in
+            progetti ambiziosi.
           </p>
         </div>
       </section>
-      {/* Skills section */}
-      <section id="skills">
-        <h1 className="subTitle">COMPETENZE</h1>
-        <div id="skillsContainer">
-          <div className="listContainer">
-            <h1>Tecnologie</h1>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JAVASCRIPT</li>
-              <li>C</li>
-              <li>REACT</li>
-              <li>SASS</li>
-              <li>BOOTSTRAP</li>
-            </ul>
-          </div>
-          <div id="projectContainer">
-            <h1>Progetti</h1>
-            <div className="imageStyle">
-              <ImageSlider slides={slides} />
-            </div>
-          </div>
+      {/* experience section */}
+      <section className='mt-20 w-[90%] m-auto'>
+        <h1 className='text-center mb-12 text-3xl font-bold text-main'>
+          Esperienze lavorative
+        </h1>
+        <div className='w-1/3 max-laptop:w-2/3 max-laptopXS:w-full'>
+          {works.map((work, index) => { 
+            return (<ProjectCard key={index} pageData={work}/>)
+          })}
+        </div>
+      </section>
+      {/* portfolio section */}
+      <section className='mt-20 w-[90%] m-auto'>
+        <h1 className='text-center mb-12 text-3xl font-bold text-main'>
+          Portfolio
+        </h1>
+        <div className='grid grid-cols-3 gap-4 max-laptop:grid-cols-2 max-laptopXS:grid-cols-1'>
+          {personalProject.map((work, index) => { 
+            return (<ProjectCard key={index} pageData={work}/>)
+          })}
         </div>
       </section>
       {/* contact section */}
-      <section id="Contact">
-        <h1 className="subTitle">CONTATTAMI</h1>
-        <div id="contactContainer">
-          <h1 className="formTitle">
+      <section
+        id='Contact'
+        className='p-10 bg-pink border-main border-4 rounded-lg my-10 w-[90%] mx-auto'
+      >
+        <h1 className='text-3xl font-bold text-center text-main'>CONTATTAMI</h1>
+        <div className='flex flex-col'>
+          <h1 className='text-2xl text-center mt-10 text-black'>
             Hai una domanda o una proposta?
             <br />
             Compila questo campo per essere contattato
           </h1>
-          <form ref={form} onSubmit={sendEmail}>
-            <label>Nome</label>
-            <input
-              type="text"
-              placeholder="Nome"
-              onChange={handleName}
+          <form className='flex flex-col' ref={form} onSubmit={sendEmail}>
+            <Input
               value={name}
-              name="from_name"
+              handle={handleName}
+              name={'from_name'}
+              title={'Nome'}
             />
-            <label>E-mail</label>
-            <input
-              type="text"
-              placeholder="E-mail"
-              name="e_mail"
-              onChange={handleEmail}
+            <Input
               value={email}
+              handle={handleEmail}
+              name={'e_mail'}
+              title={'E-mail'}
             />
-            <label>Il tuo messaggio</label>
+            <label className='my-4 text-orange font-bold text-xl text-black'>
+              Il tuo messaggio
+            </label>
             <textarea
+              className='text-black p-2 border-2 border-main rounded-lg outline-green'
               onSubmit={sendEmail}
-              placeholder="La tua idea!"
+              placeholder='La tua idea!'
               onChange={handleMessage}
               value={message}
-              cols="30"
-              rows="10"
-              name="message"
+              cols='30'
+              rows='10'
+              name='message'
             ></textarea>
             {done ? (
-              <h2>Il tuo messaggio è stato correttamente inviato</h2>
+              <h2 className='text-orange text-2xl mt-2 font-bold'>
+                Il tuo messaggio è stato correttamente inviato
+              </h2>
             ) : (
-              <button onClick={sendEmail}>Invia</button>
+              <button
+                className='p-2 w-fit mt-10 text-center rounded-lg bg-green text-main hover:bg-main hover:text-green font-bold text-xl'
+                onClick={sendEmail}
+              >
+                Invia
+              </button>
             )}
             {loading ? <Spinner /> : null}
             {error ? (
@@ -216,7 +197,7 @@ const Home = () => {
           </form>
         </div>
       </section>
-      <footer>
+      <footer className=''>
         <Footer />
       </footer>
     </div>
