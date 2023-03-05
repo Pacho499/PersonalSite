@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className='flex fixed w-full top-0 z-10 justify-between border-b-4 border-pink bg-main'>
       <div className="mb-4">
-        <img className="h-24 ml-16 mt-4" height="100px" src={url + ('/images/logo.png')} alt="logo" />
+        <img className="h-24 ml-16 mt-4 max-laptopXS:ml-[20px]" height="100px" src={url + ('/images/logo.png')} alt="logo" />
       </div>
       <div className="flex items-center text-2xl">
         <ul className="flex justify-around w-[600px] max-laptopXS:hidden">
@@ -23,28 +23,28 @@ const Header = () => {
         </ul>
         {hamburgerMenu ? (
           <FontAwesomeIcon
-            className="laptopXS:hidden"
+            className="laptopXS:hidden text-green mr-[20px] p-3 border-4 border-pink rounded-lg"
             id="hamburgerMenu"
-            style={{ paddingRight: "20px" }}
             icon={faBars}
             size="2x"
             onClick={openMenu}
           />
         ) : (
-          <ol className="flex flex-col bg-green absolute border-l-4 w-[40vw] border-black right-0 bottom-0 ">
+          <ol className="flex flex-col border-l-4 border-black absolute top-0 right-0 h-[100vh] w-[40vw] bg-green">
             <FontAwesomeIcon
               style={{ paddingTop: "20px" }}
               icon={faBars}
               size="2x"
               onClick={openMenu}
+              className="w-full border-b-4 border-black font-bold text-main flex items-center justify-center py-[20px]"
             />
-            <a onClick={openMenu} href="#skills">
+            <a className="w-full border-b-4 border-black font-bold text-main flex items-center justify-center py-[20px]" onClick={openMenu} href="#skills">
               Competenze
             </a>
-            <a onClick={openMenu} href="#Contact">
+            <a className="w-full border-b-4 border-black font-bold text-main flex items-center justify-center py-[20px]" onClick={openMenu} href="#Contact">
               Contattami
             </a>
-            <a onClick={openMenu} href={CV} download="LorenzoPalumboCV">
+            <a className="w-full border-b-4 border-black font-bold text-main flex items-center justify-center py-[20px]" onClick={openMenu} href={CV} download="LorenzoPalumboCV">
               Scarica CV
             </a>
           </ol>

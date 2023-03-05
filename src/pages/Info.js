@@ -11,9 +11,9 @@ const Info = () => {
             {/* Header */}
             <div className='flex fixed w-full top-0 z-10 justify-between border-b-4 border-pink bg-main'>
                 <Link to={'/'} className="mb-4">
-                    <img className="h-24 ml-16 mt-4" height="100px" src={url + ('/images/logo.png')} alt="logo" />
+                    <img className="h-24 ml-16 mt-4 max-laptopXS:ml-[20px]" height="100px" src={url + ('/images/logo.png')} alt="logo" />
                 </Link>
-                <Link to='/' className="flex items-center mr-10">
+                <Link to='/' className="flex items-center mr-10 max-laptopXS:mr-[20px]">
                     <button className="MenuButton">Torna alla home</button>
                 </Link>
             </div>
