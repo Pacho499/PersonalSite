@@ -15,7 +15,7 @@ const Header = () => {
       </div>
       <div className="flex items-center text-2xl">
         <ul className="flex justify-around w-[600px] max-laptopXS:hidden">
-          <a className="MenuButton" href="#skills">Competenze</a>
+          <a className="MenuButton" href="#experience">Esperienze</a>
           <a className="MenuButton" href="#Contact">Contattami</a>
           <a className="MenuButton" href={CV} download="LorenzoPalumboCV">
             Scarica CV

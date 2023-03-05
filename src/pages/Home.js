@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import emailjs from '@emailjs/browser';
 import {useRef, useState} from 'react';
+import { useEffect } from 'react';
 import Footer from '../components/Footer';
 import Spinner from '../components/Spinner';
 import Input from '../components/Input';
@@ -8,7 +9,9 @@ import ProjectCard from '../components/ProjectCard';
 import pagesData from '../pagesDatas'
 const Home = () => {
   const url = process.env.PUBLIC_URL;
-  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const works = []
   const personalProject = []
 
@@ -116,7 +119,7 @@ const Home = () => {
         </div>
       </section>
       {/* experience section */}
-      <section className='mt-20 w-[90%] m-auto'>
+      <section id='experience' className='mt-20 w-[90%] m-auto'>
         <h1 className='text-center mb-12 text-3xl font-bold text-main'>
           Esperienze lavorative
         </h1>

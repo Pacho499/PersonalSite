@@ -1,7 +1,12 @@
 import { useLocation, useParams, Link } from "react-router-dom"
+import { useEffect } from "react"
 import Footer from "../components/Footer"
 import ImageSlider from "../components/ImageSlider"
 const Info = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     const props = useParams()
     const location = useLocation()
     const state = location.state.pageData
