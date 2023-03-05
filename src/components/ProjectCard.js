@@ -16,15 +16,15 @@ const ProjectCard = ({pageData}) => {
         <h2 className=''>{pageData.shortbio}</h2>
       </div>
       <div className='flex'>
-        <Link className='linkButton' to={`/${pageData.title}`} state={{pageData}}>
+        <Link className='linkButton w-1/3' to={`/${pageData.title}`} state={{pageData}}>
           <button className='h-[50px]'>
             Più informazioni
           </button>
         </Link>
 
         {pageData.work ? null : 
-        <div className='flex'>
-          <div className='linkButton ml-3'>
+        <div className='flex w-2/3'>
+          <div className='linkButton ml-3 flex items-center'>
             <a className='flex items-center' href={pageData.git} target='_blank' rel='noreferrer'>
               <p className='mr-2'>Git Hub</p>
               <img style={{height: '2rem'}} src={url + '/images/git.png'} alt='Git Hub Logo'/>

@@ -11,17 +11,16 @@ const ImageSlider = ({imagesData, git, www, work}) => {
   const handleImg = (num) => {
     setCurrentImage(num);
   };
+  console.log(images[currentImage])
   return (
     <div className='bg-pink p-4 rounded-lg border-4 border-main mb-10'>
       <div className='flex flex-col items-center'>
-        <div className='flex h-[36rem]'>
-          <div className='w-3/4'>
-            <img
-              className='rounded-lg border-4 border-green'
-              src={images[currentImage]}
-              alt=''
-            />
-            <div className='flex justify-center'>
+        <div className='flex'>
+          <div className='w-3/4 h-5/6'>
+            <div className='w-[100%]'>
+              <img className='border-green rounded-lg border-4' src={images[currentImage]} alt="" />
+            </div>
+            <div className='flex justify-center h-1/6'>
               {images.map((_,index) => {
                 return (
                   <div
@@ -41,10 +40,10 @@ const ImageSlider = ({imagesData, git, www, work}) => {
               })}
             </div>
           </div>
-          <div className='w-1/4 text-center relative  border-4 border-green rounded-lg bg-secondary text-black ml-4'>
-            <div className={work ? 'h-full overflow-y-scroll' : ' h-3/4 overflow-y-scroll imgDescription-hidden-scrollbar'}>
-              <h1 className='font-bold text-3xl mt-4'>Descrizione immagine</h1>
-              <p className='mt-4 text-left mx-4 text-lg'>{imagesData[currentImage].description}</p>
+          <div className='w-1/4 h-[700px] text-center relative  border-4 border-green rounded-lg bg-secondary text-black ml-4'>
+            <div>
+              <h1 className='font-bold text-3xl mt-4'>{imagesData[currentImage].title}</h1>
+              <p className={work ? 'mt-4 text-left mx-4 text-lg overflow-y-scroll h-[570px] imgDescription-hidden-scrollbar' : 'mt-4 text-left mx-4 text-lg h-[450px] overflow-y-scroll imgDescription-hidden-scrollbar'}>{imagesData[currentImage].description}</p>
             </div>
             {work ? null : (
               <div className=''>
