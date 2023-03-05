@@ -29,8 +29,8 @@ const ImageSlider = ({imagesData, git, www, work}) => {
                     }}
                     className={
                       currentImage === index
-                        ? 'bg-main flex items-center justify-center p-4 m-2 font-bold text-black rounded-full h-8 w-8'
-                        : 'bg-green flex items-center justify-center p-4 m-2 hover:bg-main font-bold text-black rounded-full h-8 w-8'
+                        ? 'ImgSlider-buttonSelect'
+                        : 'ImgSlider-buttonUnselect hover:bg-main'
                     }
                   >
                     <p>{index + 1}</p>
@@ -39,10 +39,10 @@ const ImageSlider = ({imagesData, git, www, work}) => {
               })}
             </div>
           </div>
-          <div className='w-1/4 max-laptop:w-full h-[700px] max-laptop:h-fit max-laptop:ml-0 text-center relative  border-4 border-green rounded-lg bg-secondary text-black ml-4'>
+          <div className='w-1/4 description-img-container max-laptop:w-full max-laptop:h-fit max-laptop:ml-0 '>
             <div>
               <h1 className='font-bold text-3xl mt-4'>{imagesData[currentImage].title}</h1>
-              <p className={work ? 'mt-4 text-left mx-4 text-lg overflow-y-scroll h-[570px] max-laptop:h-auto imgDescription-hidden-scrollbar' : 'mt-4 text-left mx-4 text-lg h-[450px] max-laptop:h-fit overflow-y-scroll imgDescription-hidden-scrollbar'}>{imagesData[currentImage].description}</p>
+              <p className={work ? 'image-description h-[570px] max-laptop:h-auto imgDescription-hidden-scrollbar' : 'image-description text-left mx-4 text-lg h-[450px] max-laptop:h-fit imgDescription-hidden-scrollbar'}>{imagesData[currentImage].description}</p>
             </div>
             {work ? null : (
               <div className='max-laptop:mb-6'>

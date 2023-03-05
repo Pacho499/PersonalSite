@@ -12,7 +12,7 @@
   scrollbar-width: none;
 }
 
-.menu {
+.menuAnimation {
   animation-duration: 1s;
 }
 
@@ -26,9 +26,65 @@
 }
 
 /* Definizione della classe personalizzata con Tailwind */
-.menu {
+.menuAnimation {
   animation-name: renderMenu;
   animation-fill-mode: forwards;
+}
+.hamburgerMenuLinks {
+  width: 100%;
+  border-bottom-width: 6px;
+  font-size: 40px;
+  border-color: #3c4141;
+  font-weight: 700;
+  color: #55C7EA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.ImgSlider-buttonSelect{
+  background: #55C7EA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-weight: 700;
+  color: #3c4141;
+  border-radius: 9999px;
+  height: 2rem;
+  width: 2rem;
+}
+
+.ImgSlider-buttonUnselect{
+  background-color: #DFFFD8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  height: 2rem;
+  width: 2rem;
+}
+
+.description-img-container{
+ text-align: center;
+ position: relative;
+ border: 2rem #DFFFD8;
+ background: #95BDFF;
+ margin-left: 2rem;
+ border-radius: 0.5rem;
+ height: 700px;
+}
+
+.image-description {
+  margin-top: 1rem;
+  text-align: left;
+  overflow-y: scroll;
 }
 
 .MenuButton{
