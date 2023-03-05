@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import { faCircleInfo, faCircleExclamation } from "@fortawesome/free-solid-svg-icons";
+import { faCircleExclamation } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const ProjectCard = ({pageData}) => {
   const url = process.env.PUBLIC_URL;
