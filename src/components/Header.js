@@ -30,21 +30,21 @@ const Header = () => {
             onClick={openMenu}
           />
         ) : (
-          <ol className="flex flex-col border-l-4 border-black absolute top-0 right-0 h-[100vh] w-[40vw] bg-green">
+          <ol className="flex flex-col border-l-4 border-black absolute top-0 right-0 h-[100vh] w-[40vw] bg-green menu">
             <FontAwesomeIcon
               style={{ paddingTop: "20px" }}
               icon={faBars}
               size="2x"
               onClick={openMenu}
-              className="w-full border-b-4 border-black font-bold text-main flex items-center justify-center py-[20px]"
+              className="w-full border-b-4 text-[40px] border-black font-bold text-main flex items-center justify-center py-[40px]"
             />
-            <a className="w-full border-b-4 border-black font-bold text-main flex items-center justify-center py-[20px]" onClick={openMenu} href="#skills">
+            <a className="w-full border-b-4 text-[40px] border-black font-bold text-main flex items-center justify-center py-[40px]" onClick={openMenu} href="#skills">
               Competenze
             </a>
-            <a className="w-full border-b-4 border-black font-bold text-main flex items-center justify-center py-[20px]" onClick={openMenu} href="#Contact">
+            <a className="w-full border-b-4 text-[40px] border-black font-bold text-main flex items-center justify-center py-[40px]" onClick={openMenu} href="#Contact">
               Contattami
             </a>
-            <a className="w-full border-b-4 border-black font-bold text-main flex items-center justify-center py-[20px]" onClick={openMenu} href={CV} download="LorenzoPalumboCV">
+            <a className="w-full border-b-4 text-[40px] border-black font-bold text-main flex items-center justify-center py-[40px]" onClick={openMenu} href={CV} download="LorenzoPalumboCV">
               Scarica CV
             </a>
           </ol>

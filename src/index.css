@@ -12,6 +12,25 @@
   scrollbar-width: none;
 }
 
+.menu {
+  animation-duration: 1s;
+}
+
+@keyframes renderMenu {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 40vw;
+  }
+}
+
+/* Definizione della classe personalizzata con Tailwind */
+.menu {
+  animation-name: renderMenu;
+  animation-fill-mode: forwards;
+}
+
 .MenuButton{
   border-width: 4px;
   color: #DFFFD8;
