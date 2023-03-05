@@ -11,12 +11,11 @@ const ImageSlider = ({imagesData, git, www, work}) => {
   const handleImg = (num) => {
     setCurrentImage(num);
   };
-  console.log(images[currentImage])
   return (
     <div className='bg-pink p-4 rounded-lg border-4 border-main mb-10'>
       <div className='flex flex-col items-center'>
-        <div className='flex'>
-          <div className='w-3/4 h-5/6'>
+        <div className='flex max-laptop:flex-col'>
+          <div className='w-3/4 h-5/6 max-laptop:w-full'>
             <div className='w-[100%]'>
               <img className='border-green rounded-lg border-4' src={images[currentImage]} alt="" />
             </div>
@@ -40,13 +39,13 @@ const ImageSlider = ({imagesData, git, www, work}) => {
               })}
             </div>
           </div>
-          <div className='w-1/4 h-[700px] text-center relative  border-4 border-green rounded-lg bg-secondary text-black ml-4'>
+          <div className='w-1/4 max-laptop:w-full h-[700px] max-laptop:h-fit max-laptop:ml-0 text-center relative  border-4 border-green rounded-lg bg-secondary text-black ml-4'>
             <div>
               <h1 className='font-bold text-3xl mt-4'>{imagesData[currentImage].title}</h1>
-              <p className={work ? 'mt-4 text-left mx-4 text-lg overflow-y-scroll h-[570px] imgDescription-hidden-scrollbar' : 'mt-4 text-left mx-4 text-lg h-[450px] overflow-y-scroll imgDescription-hidden-scrollbar'}>{imagesData[currentImage].description}</p>
+              <p className={work ? 'mt-4 text-left mx-4 text-lg overflow-y-scroll h-[570px] max-laptop:h-auto imgDescription-hidden-scrollbar' : 'mt-4 text-left mx-4 text-lg h-[450px] max-laptop:h-fit overflow-y-scroll imgDescription-hidden-scrollbar'}>{imagesData[currentImage].description}</p>
             </div>
             {work ? null : (
-              <div className=''>
+              <div className='max-laptop:mb-6'>
                 <h2 className='text-2xl font-bold text-black mt-4'>Link</h2>
                 <div className='flex justify-center items-center mt-4 mx-2'>
                   <div className='linkButton'>

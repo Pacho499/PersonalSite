@@ -1,8 +1,8 @@
 const Footer = () => {
   const url = process.env.PUBLIC_URL
   return (
-    <div className="border-pink border-t-4 text-black bg-main flex justify-around items-center py-8">
-      <div className="contacts">
+    <div className="border-pink border-t-4 text-black bg-main flex justify-around items-center py-8 max-laptopXS:flex-col">
+      <div className="contacts max-laptopXS:mb-10">
         <h5 className='text-2xl mb-2 font-bold'>Contatti</h5>
         <p className='text-xl mb-2'>lorenzopalumbo.dev@gmail.com</p>
         <div className="flex justify-around">

@@ -73,11 +73,11 @@ const Home = () => {
       <Header />
       {/* hero section */}
       <section className='mt-40 w-[90%] m-auto'>
-        <div className='flex justify-around items-center text-center border-4 rounded-xl border-pink bg-secondary text-black px-10 '>
-          <div className='w-1/3 ml-10'>
+        <div className='flex justify-around items-center text-center border-4 rounded-xl border-pink bg-secondary text-black px-10 max-laptopXS:flex-col'>
+          <div className='w-1/3 ml-10 flex max-laptopXS:justify-center max-laptopXS:w-full max-laptopXS:ml-0 max-laptopXS:mb-10'>
             <img className='h-[400px]' src={url + '/images/me.png'} alt='' />
           </div>
-          <div className='w-1/3'>
+          <div className='w-1/3 max-laptopXS:w-full'>
             <h1 className='text-[2rem] font-black'>Lorenzo Palumbo</h1>
             <h3 className='text-2xl'>Front-end Developer</h3>
             <h3 className='text-2xl font-black mt-10'>Caratteristiche</h3>
@@ -87,7 +87,7 @@ const Home = () => {
               <li>Costanza</li>
             </ul>
           </div>
-          <div className='w-1/3 text-2xl'>
+          <div className='w-1/3 text-2xl max-laptopXS:w-full'>
             <p className='py-4'>
               Sono un giovane appassionato di tecnologia da sempre. Ho scoperto
               la mia passione per lo sviluppo web e ho deciso di intraprendere
@@ -120,7 +120,7 @@ const Home = () => {
         <h1 className='text-center mb-12 text-3xl font-bold text-main'>
           Esperienze lavorative
         </h1>
-        <div className='w-1/3'>
+        <div className='w-1/3 max-laptop:w-2/3 max-laptopXS:w-full'>
           {works.map((work, index) => { 
             return (<ProjectCard key={index} pageData={work}/>)
           })}
@@ -131,7 +131,7 @@ const Home = () => {
         <h1 className='text-center mb-12 text-3xl font-bold text-main'>
           Portfolio
         </h1>
-        <div className='grid grid-cols-3 gap-4'>
+        <div className='grid grid-cols-3 gap-4 max-laptop:grid-cols-2 max-laptopXS:grid-cols-1'>
           {personalProject.map((work, index) => { 
             return (<ProjectCard key={index} pageData={work}/>)
           })}
@@ -181,7 +181,7 @@ const Home = () => {
               </h2>
             ) : (
               <button
-                className='p-2 w-[10%] mt-10 text-center rounded-lg bg-green text-main hover:bg-main hover:text-green font-bold text-xl'
+                className='p-2 w-fit mt-10 text-center rounded-lg bg-green text-main hover:bg-main hover:text-green font-bold text-xl'
                 onClick={sendEmail}
               >
                 Invia

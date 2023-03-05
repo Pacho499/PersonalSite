@@ -1,4 +1,6 @@
 import {Link} from 'react-router-dom';
+import { faCircleInfo, faCircleExclamation } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const ProjectCard = ({pageData}) => {
   const url = process.env.PUBLIC_URL;
   const webNotAvaiable = pageData.title === 'Clone di Instagram' ? true : false
@@ -20,6 +22,7 @@ const ProjectCard = ({pageData}) => {
           <button className='h-[50px]'>
             Più informazioni
           </button>
+          {/* <FontAwesomeIcon size='2x laptopXS:hidden' icon={faCircleInfo}/> */}
         </Link>
 
         {pageData.work ? null : 
@@ -32,7 +35,8 @@ const ProjectCard = ({pageData}) => {
           </div>
 
           <div className='linkButton ml-3 flex items-center'>
-            {webNotAvaiable ? <p className='flex'>Non disponibile</p> : <a href={pageData.www} target='_blank' rel='noreferrer' className='flex items-center'>
+            {webNotAvaiable ? <FontAwesomeIcon size='2x' icon={faCircleExclamation}/> 
+            : <a href={pageData.www} target='_blank' rel='noreferrer' className='flex items-center'>
               <p className='mr-2'>Sito Web</p>
               <img style={{height: '2rem'}} src={url + '/images/www.png'} alt='Web logo'/>
             </a>}

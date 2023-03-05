@@ -12,6 +12,10 @@ module.exports = {
       'pink': '#F7C8E0',
       'black' : '#3c4141',
       'white': '#b8b8b8'
+    },
+    screens:{
+      'laptop' : '1400px',
+      'laptopXS' : '1000px'
     }
   },
   plugins: [

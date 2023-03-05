@@ -14,15 +14,16 @@ const Header = () => {
         <img className="h-24 ml-16 mt-4" height="100px" src={url + ('/images/logo.png')} alt="logo" />
       </div>
       <div className="flex items-center text-2xl">
-        <ul className="flex justify-around w-[600px]">
+        <ul className="flex justify-around w-[600px] max-laptopXS:hidden">
           <a className="MenuButton" href="#skills">Competenze</a>
           <a className="MenuButton" href="#Contact">Contattami</a>
           <a className="MenuButton" href={CV} download="LorenzoPalumboCV">
             Scarica CV
           </a>
         </ul>
-        {/* {hamburgerMenu ? (
+        {hamburgerMenu ? (
           <FontAwesomeIcon
+            className="laptopXS:hidden"
             id="hamburgerMenu"
             style={{ paddingRight: "20px" }}
             icon={faBars}
@@ -30,7 +31,7 @@ const Header = () => {
             onClick={openMenu}
           />
         ) : (
-          <ol>
+          <ol className="flex flex-col bg-green absolute border-l-4 w-[40vw] border-black right-0 bottom-0 ">
             <FontAwesomeIcon
               style={{ paddingTop: "20px" }}
               icon={faBars}
@@ -47,7 +48,7 @@ const Header = () => {
               Scarica CV
             </a>
           </ol>
-        )} */}
+        )}
       </div>
     </div>
   );
