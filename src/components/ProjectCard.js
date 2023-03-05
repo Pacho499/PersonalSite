@@ -5,19 +5,19 @@ const ProjectCard = ({pageData}) => {
   return (
     <div className='relative h-full border-pink border-4 w-full m-2 rounded-lg p-6 bg-secondary text-black'>
       <h1 className='text-3xl font-bold'>{pageData.title}</h1>
-      <div className='my-2 h-44'>
+      <div className='my-2 h-48'>
         <h2 className='font-bold text-xl'>Tecnologie Utilizzate</h2>
         {pageData.languages.map((language, id) => {
           return <li key={id}>{language}</li>;
         })}
       </div>
-      <div>
+      <div className='h-60 mb-8'>
         <h2 className='my-2 font-bold text-xl'>Descrizione</h2>
-        <h2 className='mb-8'>{pageData.shortbio}</h2>
+        <h2 className=''>{pageData.shortbio}</h2>
       </div>
-      <div className='absolute bottom-2 flex'>
-        <Link to={`/${pageData.title}`} state={{pageData}}>
-          <button className='linkButton h-[50px]'>
+      <div className='flex'>
+        <Link className='linkButton' to={`/${pageData.title}`} state={{pageData}}>
+          <button className='h-[50px]'>
             Più informazioni
           </button>
         </Link>

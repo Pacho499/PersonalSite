@@ -166,7 +166,7 @@ const Home = () => {
               Il tuo messaggio
             </label>
             <textarea
-              className='text-black p-2 border-2 border-main rounded-lg'
+              className='text-black p-2 border-2 border-main rounded-lg outline-green'
               onSubmit={sendEmail}
               placeholder='La tua idea!'
               onChange={handleMessage}
