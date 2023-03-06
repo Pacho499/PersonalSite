@@ -42,7 +42,7 @@ const ImageSlider = ({imagesData, git, www, work}) => {
           <div className='w-1/4 description-img-container max-laptop:w-full max-laptop:h-fit max-laptop:ml-0 '>
             <div>
               <h1 className='font-bold text-3xl mt-4'>{imagesData[currentImage].title}</h1>
-              <p className={work ? 'image-description h-[570px] max-laptop:h-auto imgDescription-hidden-scrollbar' : 'image-description text-left mx-4 text-lg h-[450px] max-laptop:h-fit imgDescription-hidden-scrollbar'}>{imagesData[currentImage].description}</p>
+              <p className={work ? 'image-description h-[570px] max-laptop:h-auto imgDescription-hidden-scrollbar' : 'image-description h-[450px] max-laptop:h-fit imgDescription-hidden-scrollbar'}>{imagesData[currentImage].description}</p>
             </div>
             {work ? null : (
               <div className='max-laptop:mb-6'>

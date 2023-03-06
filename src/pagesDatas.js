@@ -46,17 +46,17 @@ const PagesDatas = [
     'League of wiki',
     ['React.js','Git','Netlify','Bootstrap','TypeScript','SASS'],
     "Il progetto League of wiki utilizza l'API di League of Legends per creare un sito dedicato ai giocatori. Il sito fornisce dettagli sui personaggi, il rank e le ultime partite dei giocatori.",
-    "Il progetto League of wiki utilizza l'API di League of Legends per creare un sito dedicato ai giocatori. Il sito fornisce dettagli sui personaggi, il rank e le ultime partite dei giocatori. Questo progetto mi ha dato l'opportunità di sperimentare le tecnologie front-end moderne e di migliorare le mie capacità di sviluppo. Ho lavorato diligentemente per garantire che il sito fosse intuitivo e facile da usare, oltre a essere esteticamente piacevole.",
+    "Il progetto League of wiki utilizza l'API di League of Legends per creare un sito dedicato ai giocatori. Il sito fornisce dettagli sui personaggi, il rank e le ultime partite dei giocatori. Questo progetto mi ha dato l'opportunità di sperimentare le tecnologie front end moderne e di migliorare le mie capacità di sviluppo. Ho lavorato diligentemente per garantire che il sito fosse intuitivo e facile da usare, oltre a essere esteticamente piacevole.",
     false,
     [
       {
         title:"Home",
-        description:"Si presenta con un design accattivante e ricco di elementi grafici ispirati al tema del gioco. Come elemento principale è presente una barra di input per la ricerca dei giocatori, dove l'utente può inserire il nome del giocatore che desidera trovare. Sotto alla barra di ricerca sono presenti una serie di bottoni per selezionare lo stato in cui l’account del giocatore si trova.Inoltre, è presente un'area dedicata ai personaggi gratuiti della settimana, dove vengono presentati i personaggi disponibili per l'uso gratuito in quella determinata settimana. Questa sezione essa è presentata come una serie di immagini.In alto abbiamo un menu di navigazione che consente all'utente di accedere alle diverse sezioni del sito, come le informazioni sui personaggi ed il proprio account.",
+        description:"Si presenta con un design accattivante e ricco di elementi grafici ispirati al tema del gioco. Come elemento principale è presente una barra di input per la ricerca dei giocatori, dove l'utente può inserire il nome del giocatore che desidera trovare. Sotto alla barra di ricerca sono presenti una serie di bottoni per selezionare lo stato in cui l’account del giocatore si trova. Inoltre, è presente un'area dedicata ai personaggi gratuiti della settimana, dove vengono presentati i personaggi disponibili per l'uso gratuito in quella determinata settimana. Questa sezione è presentata come una serie di immagini. In alto abbiamo un menu di navigazione che consente all'utente di accedere alle diverse sezioni del sito, come le informazioni sui personaggi ed il proprio account.",
         url: '/images/leagueOfWikiHome.png'
       },
       {
         title:"Find Champ",
-        description:"Si presenta con un layout moderno e accattivante, dove l'utente può cercare e scegliere il personaggio desiderato per avere maggiori informazioni. Nella parte superiore della pagina potrebbe è presente una barra di input, dove l'utente può inserire il nome del personaggio che desidera trovare. Sotto alla barra di ricerca sono essere presentati i personaggi disponibili, organizzati in una griglia di card. Ogni card contiene l'immagine del personaggio ed il nome.",
+        description:"Si presenta con un layout moderno e accattivante, dove l'utente può cercare e scegliere il personaggio desiderato per avere maggiori informazioni. Nella parte superiore della pagina è presente una barra di input, dove l'utente può inserire il nome del personaggio che desidera trovare. Sotto alla barra di ricerca sono presentati i personaggi disponibili, organizzati in una griglia di card. Ogni card contiene l'immagine del personaggio ed il nome.",
         url: '/images/leagueOfWikiChamps.png'
       },
       {
@@ -66,12 +66,12 @@ const PagesDatas = [
       },
       {
         title:"Account",
-        description:"Organizzata in modo semplice ed intuitivo, con una lista laterale a sinistra che contiene l’ elenco dei nostri giocatori preferiti e una barra lista destra con l’ elenco dei nostri personaggi preferiti. L'elenco dei giocatori, che l'utente ha scelto come preferiti, con la possibilità di aggiungere o rimuovere giocatori dalla lista. Ogni voce della lista è rappresentata da una miniatura dell'immagine profilo del giocatore, accompagnata dal nome e dal suo livello. L’elenco dei personaggi preferiti dell'utente, che possono essere aggiunti o rimossi dalla lista. È composta da una serie di voci della lista rappresentate da una miniatura dell'immagine del personaggio, accompagnata dal nome.",
+        description:"Organizzata in modo semplice ed intuitivo, con una lista laterale a sinistra che contiene l’elenco dei nostri giocatori preferiti e una lista a destra con l’elenco dei nostri personaggi preferiti. Ogni giocatore è rappresentato da una miniatura dell'immagine profilo, accompagnata dal nome e dal suo livello. L’elenco dei personaggi preferiti invece sono rappresentanti da una miniatura dell'immagine, accompagnata dal nome.",
         url: '/images/leagueOfWikiAccount.png'
       },
       {
         title:"Player Info",
-        description:"Ha una disposizione simile a quella di una scheda. Nella parte superiore della pagina, a sinistra, è presente il nome del giocatore ed il suo livello , mentre a destra sono visualizzati i suoi rank (flex, soloQ e TFT), ovvero la sua posizione nella classifica del gioco. È presente una tabella con tutti gli ultimi match giocati dal giocatore, con informazioni quali la durata della partita, il personaggio scelto, il risultato della partita, la build e il punteggio. Questa tabella è organizzata in modo che sia facile da consultare e che permetta all'utente di visualizzare rapidamente le informazioni desiderate.",
+        description:"Ha una disposizione simile a quella di una scheda. Nella parte superiore della pagina, a sinistra, è presente il nome del giocatore ed il suo livello, mentre a destra sono visualizzati i suoi rank (flex, soloQ e TFT), ovvero la sua posizione nella classifica del gioco. È presente una tabella con tutti gli ultimi match giocati dal giocatore, con informazioni quali la durata della partita, il personaggio scelto, il risultato della partita, la build e il punteggio. Questa tabella è organizzata in modo che sia facile da consultare e che permetta all'utente di visualizzare rapidamente le informazioni sulla partita.",
         url: '/images/leagueOfWikiSummoner.png'
       },
     ],
@@ -92,12 +92,12 @@ const PagesDatas = [
       },
       {
         title:"Rules",
-        description:"Dimostrazione della sezione delle regole che si apre a tenda",
+        description:"Dimostrazione della sezione delle regole che si apre a tenda.",
         url: '/images/setteMezzoRules.png'
       },
       {
         title:"Game",
-        description:"Rappresentazione di una partita in cui il giocatore ha vinto, possiamo notare le carte dei due giocatori e come lo score si sia aggiornato, inoltre abbiamo il verdetto del gioco sul risultato della partita",
+        description:"Rappresentazione di una partita in cui il giocatore ha vinto, possiamo notare le carte dei due giocatori e come lo score si sia aggiornato, inoltre abbiamo il verdetto del gioco sul risultato della partita.",
         url: '/images/setteMezzoGame.png'
       },
     ],
@@ -113,12 +113,12 @@ const PagesDatas = [
     [
       {
         title:"LogIn",
-        description:"Proprio come il sito originale il bottone accedi diventerà cliccabile solo nel momento in cui verrano rispettati determinati parametri di lunghezza degli input, inoltre abbiamo la possibilità di vedere la password che stiamo inserendo. Cliccando sul bottone 'iscriviti' avremo la possibilità di navigare al SignUp",
+        description:"Proprio come il sito originale il bottone accedi diventerà cliccabile solo nel momento in cui verrano rispettati determinati parametri di lunghezza degli input, inoltre abbiamo la possibilità di vedere la password che stiamo inserendo. Cliccando sul bottone 'iscriviti' avremo la possibilità di navigare al SignUp.",
         url: '/images/fakeInstaLogin.png'
       },
       {
         title:"SignUp",
-        description:"Proprio come il sito originale il bottone 'avanti' diventa attivo solo dopo che gli input avranno soddisfatto le condizioni richieste. Tutte le scritte riprendono quelle originali",
+        description:"Proprio come il sito originale il bottone 'avanti' diventa attivo solo dopo che gli input avranno soddisfatto le condizioni richieste. Tutte le scritte riprendono quelle originali.",
         url: '/images/fakeInstaSignUp.png'
       },
       {
@@ -128,22 +128,22 @@ const PagesDatas = [
       },
       {
         title:"Base profile",
-        description:"I follower e i profili seguiti sono un numero fisso, abbiamo a disposizione pero il conteggio dei post ed il bottone 'Modifica Profilo' che ci permette di cambiare le impostazioni del nostro account",
+        description:"I follower e i profili seguiti sono un numero fisso, abbiamo a disposizione però il conteggio dei post ed il bottone 'Modifica Profilo' che ci permette di cambiare le impostazioni del nostro account.",
         url: '/images/fakeInstaBaseProfile.png'
       },
       {
         title:"Profile settings",
-        description:"Formata da un semplice box in cui possiamo inserire tutti gli input per cambiare le nostre impostazioni, possiamo cambiare nome, nome Utente, bio e foto profilo proprio come sul sito originale.",
+        description:"Essa è formata da un semplice box in cui possiamo inserire tutti gli input per cambiare le nostre impostazioni, possiamo cambiare nome, nome Utente, bio e foto profilo proprio come sul sito originale.",
         url: '/images/fakeInstaProfileSettings.png'
       },
       {
         title:"Home after post",
-        description:"Proprio come nel sito originale dopo aver caricato una foto verremo condotti alla home di instagram e vedremo come primo post la foto appena caricata seguita da post fake. Se dovessimo cambiare o ricaricare la pagina avremo a disposizione altri post fake",
+        description:"Proprio come nel sito originale dopo aver caricato una foto verremo condotti alla home di instagram e vedremo come primo post la foto appena caricata seguita da post fake. Se dovessimo cambiare o ricaricare la pagina avremo a disposizione altri post fake.",
         url: '/images/fakeInstaHomePost.png'
       },
       {
         title:"Profile",
-        description:"Possiamo notare che il valore dei post è salito e si basa effettivamente sui post caricati dal utente, inoltre notiamo come caricando una foto profilo anche l'header cambia avendo una miniatura della foto profilo dell'utente",
+        description:"Possiamo notare che il valore dei post è salito e si basa effettivamente sui post caricati dal utente, inoltre notiamo come caricando una foto profilo anche l'header cambia avendo una miniatura della foto profilo dell'utente.",
         url: '/images/fakeInstaProfile.png'
       },
     ],
@@ -164,7 +164,7 @@ const PagesDatas = [
       },
       {
         title:"Convert",
-        description:"Una volta convertito il valore la pagina ci restituirà il risultato e metterà a nostra disposizione un bottone di informazione sulla valuta scelta, essa ci porterà alla pagina 'info valute'",
+        description:"Una volta convertito il valore la pagina ci restituirà il risultato e metterà a nostra disposizione un bottone di informazione sulla valuta scelta, essa ci porterà alla pagina 'info valute'.",
         url: '/images/valueConverterDone.png'
       },
       {
@@ -180,27 +180,27 @@ const PagesDatas = [
     'Clone sito UniversApp',
     ['HTML', 'SASS'],
     'Primo progetto del corso in cui ho sperimentato le basi dello sviluppo web. Il sito è un clone della vecchia homepage di universapp.',
-    "Questo progetto consiste nella creazione di un clone del vecchi sito di Universapp utilizzando HTML e SASS come linguaggi di programmazione. L'obiettivo è quello di replicare l'interfaccia utente e le funzionalità principali del sito originale. Il codice HTML è stato scritto per essere ben strutturato e accessibile, mentre SASS è stato utilizzato per creare un design che sia coerente con lo stile del sito originale. Il progetto è stato sviluppato per soddisfare i requisiti del compito assegnato per il corso di Universapp e dimostra la capacità di creare un sito web funzionale utilizzando HTML e SASS.",
+    "Questo progetto consiste nella creazione di un clone del vecchio sito di Universapp utilizzando HTML e SASS come linguaggi di programmazione. L'obiettivo è quello di replicare l'interfaccia utente e le funzionalità principali del sito originale. Il codice HTML è stato scritto per essere ben strutturato e accessibile, mentre SASS è stato utilizzato per creare un design che sia coerente con lo stile del sito originale. Il progetto è stato sviluppato per soddisfare i requisiti del compito assegnato per il corso di Universapp e dimostra la capacità di creare un sito web funzionale utilizzando HTML e SASS.",
     false,
     [
       {
         title:"Hero",
-        description:"Rappresentazione della sezione Hero",
+        description:"Rappresentazione della sezione Hero.",
         url: '/images/universAppHero.png'
       },
       {
         title:"Arguments",
-        description:"Rappresentazione della sezione argomenti",
+        description:"Rappresentazione della sezione argomenti.",
         url: '/images/universAppArguments.png'
       },
       {
         title:"Difference",
-        description:"Rappresentazione delle differenze",
+        description:"Rappresentazione delle differenze.",
         url: '/images/universAppTable.png'
       },
       {
         title:"Stats",
-        description:"Rappresentazione delle statistiche in Italia sui tech job",
+        description:"Rappresentazione delle statistiche in Italia sui tech job.",
         url: '/images/universAppStats.png'
       },
     ],
