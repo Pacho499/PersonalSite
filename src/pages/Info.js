@@ -23,7 +23,7 @@ const Info = () => {
                 </Link>
             </div>
             {/* body */}
-           <div className="w-[90%] m-auto mt-40">
+           <div className="w-[95%] m-auto mt-40">
             <h1 className="text-3xl mb-10 font-bold text-black">{props.project}</h1>
             <div className="p-4 bg-pink border-4 border-main mb-10 rounded-lg" >
                 <p  className="text-xl text-black">
