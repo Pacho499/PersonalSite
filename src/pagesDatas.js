@@ -43,6 +43,57 @@ const PagesDatas = [
     '',
   ),
   new Page(
+    'Nerds Ecomerce',
+    ['React Native','Git','Expo'],
+    "Il progetto punta a creare un finto ecomerce in cui poter eseguire acquisti, aggiungere prodotti al carrello ed iscriversi per gestire i propri dati come indirizzo di residenza o metodo di pagamento. NON INSERIRE DATI REALI IN CASO DI UTILIZZO DELL'APP",
+    "NON INSERIRE DATI REALI IN CASO DI UTILIZZO DEL APP. Il progetto 'nerdEcommerce' è un'applicazione mobile sviluppata utilizzando la tecnologia React Native ed Expo. L'obiettivo principale del progetto è creare un finto e-commerce in cui gli utenti possono esplorare i prodotti, aggiungerli al carrello, effettuare il pagamento utilizzando metodi di pagamento salvati e gestire gli indirizzi di spedizione. Il progetto offre una vasta gamma di funzionalità, tra cui l'autenticazione dell'utente, la visualizzazione dei prodotti, la gestione del carrello, la gestione dei pagamenti e la gestione degli indirizzi di spedizione. Inoltre, offre anche una funzionalità di ricerca per aiutare gli utenti a trovare prodotti specifici.",
+    false,
+    [
+      {
+        title:"Home",
+        description:"La homepage dell'e-commerce presenta una barra di ricerca in alto, dove gli utenti possono inserire parole chiave per cercare prodotti specifici. Tuttavia, il focus principale della pagina è dato dai vari box situati sotto la barra di ricerca, ognuno dei quali rappresenta un diverso franchiste di prodotti. Alcuni esempi di questi box sono quelli dedicati a marchi famosi come Marvel, Sony, e così via. All'interno di ogni box, gli utenti possono trovare una serie di card che rappresentano i prodotti di quella specifica marca, accompagnate dal immagine, nome e dal prezzo del prodotto. Inoltre, ogni card è cliccabile e porta l'utente alla pagina di dettaglio del prodotto corrispondente, dove è possibile trovare ulteriori informazioni sul prodotto stesso e procedere all'acquisto. In generale, la homepage dell'e-commerce è stata progettata per offrire un'esperienza utente accattivante e intuitiva, facilitando la navigazione degli utenti all'interno della piattaforma e rendendo più facile la ricerca e l'acquisto dei prodotti.",
+        url: '/images/NerdsHome.png'
+      },
+      {
+        title:"Items 1",
+        description:"La parte superiore della pagina dettagli prodotto è progettata per mettere in evidenza l'immagine del prodotto, il nome e il prezzo. L'immagine del prodotto occupa una grande parte della sezione superiore della pagina, mentre il nome e il prezzo sono posizionati subito sotto l'immagine. Inoltre, sono presenti due pulsanti che permettono agli utenti di procedere all'acquisto del prodotto: 'Aggiungi al carrello' e 'Compra subito'. Questi pulsanti sono chiaramente visibili e posizionati in modo da facilitare la selezione dell'opzione preferita dall'utente. È importante notare che l'applicazione è progettata per essere responsive, il che significa che la sua interfaccia si adatta automaticamente alle diverse dimensioni dello schermo del cellulare su cui viene visualizzata. Ciò garantisce che l'esperienza utente sia uniforme e di alta qualità su tutti i dispositivi, indipendentemente dalle loro dimensioni. ",
+        url: '/images/NerdsItemSell.png'
+      },
+      {
+        title:"Items 2",
+        description:"La parte inferiore della pagina dettagli prodotto è progettata per mostrare ai clienti altri prodotti che potrebbero interessare loro. Ci sono due sezioni principali che offrono consigli sui prodotti correlati: La prima sezione è basata sul franchise del prodotto che l'utente sta visualizzando. Ad esempio, se l'utente sta visualizzando un prodotto legato al franchise Marvel, la sezione di consigli presenta altri prodotti legati al franchise Marvel come fumetti, giocattoli o gadget. La seconda sezione di consigli si basa sulla tipologia di prodotto. Ad esempio, se l'utente sta visualizzando una console di gioco, la sezione di consigli presenta altre console di gioco ma di franchise diversi In entrambe le sezioni di consigli, ogni prodotto è rappresentato da una card con un'immagine, un nome e un prezzo. Inoltre, ogni prodotto è cliccabile e porta l'utente alla relativa pagina di dettaglio del prodotto. In generale, la parte inferiore della pagina dettagli prodotto è stata progettata per fornire ai clienti una selezione di prodotti correlati e suggeriti in modo da facilitare la loro esperienza di acquisto e offrire loro maggiori opzioni di acquisto.",
+        url: '/images/NerdsItemSell2.png'
+      },
+      {
+        title:"Fast Buy",
+        description:"Quando l'utente preme il pulsante 'Compra subito', si aprirà una modale che varia in base alla sua condizione di accesso. Se l'utente non è ancora loggato nell'app, vedrà un modulo in cui dovrà inserire tutte le informazioni necessarie per effettuare l'acquisto. Il modulo richiederà informazioni come il nome completo dell'utente, l'indirizzo di spedizione, il tipo di carta di credito, il numero di carta di credito e il CVV. In fondo al modulo sarà presente il pulsante 'Compila i campi'. Quando l'utente avrà completato correttamente il modulo, il pulsante diventerà 'Acquista' e l'utente potrà procedere all'acquisto del prodotto. Inoltre, l'app gli consiglierà di effettuare il login per rendere l'operazione più veloce e fornirà un pulsante per accedere alla pagina di login. Se invece l'utente è già loggato nell'app, vedrà un riepilogo dei suoi dati di indirizzo e carta di credito. L'utente avrà la possibilità di aggiornare o modificare i dati se necessario. In questo caso, l'utente dovrà inserire solo il CVV della carta di credito e poi potrà premere sul pulsante 'Compra' per effettuare l'acquisto.",
+        url: '/images/NerdsFastCheckout.png'
+      },
+      {
+        title:"Cart",
+        description:"La sezione del carrello dell'applicazione NerdEcommerce contiene un riepilogo di tutti i prodotti inseriti dal cliente. Ogni prodotto sarà rappresentato da una immagine, il nome del prodotto, il prezzo e la quantità presente all'interno del carrello. Inoltre, per ogni prodotto presente ci sarà un pulsante che consente di eliminarlo dal carrello. La tab bar dell'applicazione visualizza un'icona del carrello con una notifica che indica il numero di prodotti presenti al suo interno. Questo consente all'utente di vedere rapidamente il numero di prodotti che ha nel carrello senza dover aprire la sezione del carrello. Nella parte finale della sezione del carrello, verrà visualizzato il prezzo totale dei prodotti presenti nel carrello. In questo modo, l'utente può vedere rapidamente il totale della sua spesa. Infine, l'applicazione fornisce un pulsante 'Acquista', che consente all'utente di procedere con l'acquisto dei prodotti presenti nel carrello.",
+        url: '/images/NerdsCart.png'
+      },
+      {
+        title:"Checkout",
+        description:"La sezione checkout di NerdEcommerce presenta alcune differenze a seconda che l'utente sia loggato o meno. Nel caso in cui l'utente non sia loggato, la sezione checkout visualizzerà un modulo in cui verranno richiesti tutti i dati necessari per completare l'acquisto. Questi dati includono il nome, l'indirizzo di spedizione, e le informazioni sulla carta di credito. In fondo alla pagina, l'utente troverà un pulsante 'Compila i campi' per inviare i dati e procedere all'acquisto. Una volta che l'utente ha completato il modulo con tutti i dati necessari, il pulsante 'Compila i campi' diventerà 'Acquista' e l'utente potrà confermare l'acquisto. Nel caso in cui l'utente sia loggato, la sezione checkout visualizzerà un riepilogo dei dati di spedizione e dei dettagli della carta di credito dell'utente. L'utente avrà la possibilità di modificare questi dati, se necessario, e dovrà inserire solo il codice di sicurezza CVV della carta di credito. Una volta completati questi passaggi, l'utente potrà premere il pulsante 'Acquista' per confermare l'acquisto.",
+        url: '/images/NerdsCheckout.png'
+      },
+      {
+        title:"Sections",
+        description:"La sezione 'Sezioni' contiene diverse schede con il titolo delle varie sezioni dell'e-commerce, come ad esempio 'Videogiochi', 'Decoro', 'Console', ecc. Ogni scheda contiene una selezione di prodotti basati sulla categoria della sezione selezionata. Premendo su una scheda, si accede ad una pagina contenente una lista di prodotti relativi alla sezione selezionata. Ogni prodotto ha una propria scheda con la sua immagine, prezzo e nome, l’utente ha la possibilità di aggiungerlo al carrello. Questa sezione consente all'utente di esplorare le diverse categorie dell'e-commerce e trovare facilmente i prodotti che stanno cercando.",
+        url: '/images/Nerdssections.png'
+      },
+      {
+        title:"Account",
+        description:"La sezione utente in nerdEcomerce è diversa in base al fatto che l'utente sia loggato o meno. Se l'utente non è loggato, la sezione visualizzata gli permette di effettuare il login inserendo le proprie credenziali oppure di iscriversi al sito premendo il pulsante 'Iscriviti'. Se invece l'utente è loggato, la sezione mostrerà un riepilogo dei suoi dati di indirizzo e carta di credito salvati, che possono essere modificati, oltre al pulsante 'Logout' per effettuare la disconnessione dal proprio account. Una volta che l'utente effettua il login o l'iscrizione, i suoi dati verranno salvati nel dispositivo, consentendogli di essere automaticamente loggato nell'applicazione ogni volta che la utilizza.",
+        url: '/images/NerdsAuth.png'
+      },
+    ],
+    '',
+    'https://github.com/Pacho499/nerdsecomerce',
+  ),
+  new Page(
     'League of wiki',
     ['React.js','Git','Netlify','Bootstrap','TypeScript','SASS'],
     "Il progetto League of wiki utilizza l'API di League of Legends per creare un sito dedicato ai giocatori. Il sito fornisce dettagli sui personaggi, il rank e le ultime partite dei giocatori.",
