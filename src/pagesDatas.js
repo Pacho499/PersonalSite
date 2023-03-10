@@ -90,7 +90,7 @@ const PagesDatas = [
         url: '/images/NerdsAuth.png'
       },
     ],
-    '',
+    'https://expo.dev/@lorenzopalumbo/NerdsEcomerce',
     'https://github.com/Pacho499/nerdsecomerce',
   ),
   new Page(
