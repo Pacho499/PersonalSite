@@ -17,7 +17,7 @@ const ImageSlider = ({imagesData, git, www, work}) => {
         <div className='flex max-laptop:flex-col'>
           <div className='w-3/4 h-5/6 max-laptop:w-full'>
             <div className='w-[100%]'>
-              <img className='border-green rounded-lg border-4' src={images[currentImage]} alt="" />
+              <img className='border-green rounded-lg border-4 w-full h-full' src={images[currentImage]} alt="" />
             </div>
             <div className='flex justify-center h-1/6'>
               {images.map((_,index) => {
