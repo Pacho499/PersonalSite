@@ -21,22 +21,22 @@ const PagesDatas = [
       {
         title:'Home 1.0',
         description:"Prima versione della home che si concentra principalmente sulla visualizzazione di dati relativi agli eventi sportivi, con una tabella che occupa gran parte dello spazio della pagina. La pagina presenta un design minimalista e semplice, con pochi elementi visivi e un focus sulla funzionalità e sull'utilizzo pratico del sito. La tabella è organizzata in modo logico e facile da leggere, con colonne per le diverse informazioni e righe per i singoli eventi. In alto è presente una barra di navigazione e una toolbar per la ricerca degli eventi, per facilitare l'accesso alle informazioni desiderate.",
-        url: 'images/monitor1.0.png'
+        url: 'images/monitor1.0.jpg'
       },
       {
         title:'Home 2.0',
         description:"Seconda versione della home con un design migliorato, dove la funzionalità e l'estetica si fondono in modo armonioso. Rispetto alla versione precedente, questa pagina presenta un layout più libero e flessibile. La toolbar è stata fissata in alto, mentre il menu è stato posizionato nel lato sinistro della pagina, per facilitare la navigazione, esso è estendibile o riducibile in base alla grandezza dello schermo. Sono presenti elementi visivi più accattivanti, come lo sfondo della tabella in trasparenza e i colori per definire il bookmaker, che contribuiscono a creare un'esperienza più coinvolgente per gli utenti. Il testo è organizzato in modo più pulito e leggibile, con l'uso di font più moderni. La tabella degli eventi sportivi è stata riprogettata in modo più moderno.",
-        url: 'images/monitor2.0.png'
+        url: 'images/monitor2.0.jpg'
       },
       {
         title:'Dettaglio Evento 1.0',
         description:"Prima versione del dettaglio evento che mostra le varie quote dei siti di betting, caratterizzata da un design semplice e funzionale piuttosto che estetico. La modale ha un layout semplice, con una lista dei bookmaker e le relative quote, organizzati in colonne e righe. Il testo è organizzato in modo chiaro e leggibile, utilizzando font semplici e di dimensioni adeguate. La funzionalità principale è quella di selezione delle scommesse desiderate con una navigazione diretta al sito del bookmaker. Non ci sono elementi visivi accattivanti o di branding, ma solo informazioni utili per gli utenti che cercano di puntare sulle scommesse sportive.",
-        url: '/images/dettaglioEvento1.0.png'
+        url: '/images/dettaglioEvento1.0.jpg'
       },
       {
         title:"Dettaglio Evento 2.0",
         description:"Seconda versione del dettaglio evento dall'aspetto moderno ed esteticamente accattivante, dove il design si fonde con la funzionalità in modo equilibrato. Rispetto alla versione precedente, questa modale presentare un layout più sofisticato, Il testo potrebbe è organizzato in modo gerarchico, con il nome, la tipologia, il tipo e l'orario del evento, per facilitare la comprensione delle informazioni. Sono presenti elementi visivi accattivanti, come il logo e i colori di background dei vari bookmaker che enfatizzano le quote e le rendono più chiare e visibili. Il design è in linea con l'immagine di branding del sito, con colori coordinati e font riconoscibili.",
-        url: '/images/dettaglioEvento2.0.png'
+        url: '/images/dettaglioEvento2.0.jpg'
       },
     ],
     '',
@@ -52,42 +52,42 @@ const PagesDatas = [
       {
         title:"Home",
         description:"La homepage dell'e-commerce presenta una barra di ricerca in alto, dove gli utenti possono inserire parole chiave per cercare prodotti specifici. Tuttavia, il focus principale della pagina è dato dai vari box situati sotto la barra di ricerca, ognuno dei quali rappresenta un diverso franchiste di prodotti. Alcuni esempi di questi box sono quelli dedicati a marchi famosi come Marvel, Sony, e così via. All'interno di ogni box, gli utenti possono trovare una serie di card che rappresentano i prodotti di quella specifica marca, accompagnate dal immagine, nome e dal prezzo del prodotto. Inoltre, ogni card è cliccabile e porta l'utente alla pagina di dettaglio del prodotto corrispondente, dove è possibile trovare ulteriori informazioni sul prodotto stesso e procedere all'acquisto. In generale, la homepage dell'e-commerce è stata progettata per offrire un'esperienza utente accattivante e intuitiva, facilitando la navigazione degli utenti all'interno della piattaforma e rendendo più facile la ricerca e l'acquisto dei prodotti.",
-        url: '/images/NerdsHome.png'
+        url: '/images/NerdsHome.jpg'
       },
       {
         title:"Items 1",
         description:"La parte superiore della pagina dettagli prodotto è progettata per mettere in evidenza l'immagine del prodotto, il nome e il prezzo. L'immagine del prodotto occupa una grande parte della sezione superiore della pagina, mentre il nome e il prezzo sono posizionati subito sotto l'immagine. Inoltre, sono presenti due pulsanti che permettono agli utenti di procedere all'acquisto del prodotto: 'Aggiungi al carrello' e 'Compra subito'. Questi pulsanti sono chiaramente visibili e posizionati in modo da facilitare la selezione dell'opzione preferita dall'utente. È importante notare che l'applicazione è progettata per essere responsive, il che significa che la sua interfaccia si adatta automaticamente alle diverse dimensioni dello schermo del cellulare su cui viene visualizzata. Ciò garantisce che l'esperienza utente sia uniforme e di alta qualità su tutti i dispositivi, indipendentemente dalle loro dimensioni. ",
-        url: '/images/NerdsItemSell.png'
+        url: '/images/NerdsItemSell.jpg'
       },
       {
         title:"Items 2",
         description:"La parte inferiore della pagina dettagli prodotto è progettata per mostrare ai clienti altri prodotti che potrebbero interessare loro. Ci sono due sezioni principali che offrono consigli sui prodotti correlati: La prima sezione è basata sul franchise del prodotto che l'utente sta visualizzando. Ad esempio, se l'utente sta visualizzando un prodotto legato al franchise Marvel, la sezione di consigli presenta altri prodotti legati al franchise Marvel come fumetti, giocattoli o gadget. La seconda sezione di consigli si basa sulla tipologia di prodotto. Ad esempio, se l'utente sta visualizzando una console di gioco, la sezione di consigli presenta altre console di gioco ma di franchise diversi In entrambe le sezioni di consigli, ogni prodotto è rappresentato da una card con un'immagine, un nome e un prezzo. Inoltre, ogni prodotto è cliccabile e porta l'utente alla relativa pagina di dettaglio del prodotto. In generale, la parte inferiore della pagina dettagli prodotto è stata progettata per fornire ai clienti una selezione di prodotti correlati e suggeriti in modo da facilitare la loro esperienza di acquisto e offrire loro maggiori opzioni di acquisto.",
-        url: '/images/NerdsItemSell2.png'
+        url: '/images/NerdsItemSell2.jpg'
       },
       {
         title:"Fast Buy",
         description:"Quando l'utente preme il pulsante 'Compra subito', si aprirà una modale che varia in base alla sua condizione di accesso. Se l'utente non è ancora loggato nell'app, vedrà un modulo in cui dovrà inserire tutte le informazioni necessarie per effettuare l'acquisto. Il modulo richiederà informazioni come il nome completo dell'utente, l'indirizzo di spedizione, il tipo di carta di credito, il numero di carta di credito e il CVV. In fondo al modulo sarà presente il pulsante 'Compila i campi'. Quando l'utente avrà completato correttamente il modulo, il pulsante diventerà 'Acquista' e l'utente potrà procedere all'acquisto del prodotto. Inoltre, l'app gli consiglierà di effettuare il login per rendere l'operazione più veloce e fornirà un pulsante per accedere alla pagina di login. Se invece l'utente è già loggato nell'app, vedrà un riepilogo dei suoi dati di indirizzo e carta di credito. L'utente avrà la possibilità di aggiornare o modificare i dati se necessario. In questo caso, l'utente dovrà inserire solo il CVV della carta di credito e poi potrà premere sul pulsante 'Compra' per effettuare l'acquisto.",
-        url: '/images/NerdsFastCheckout.png'
+        url: '/images/NerdsFastCheckout.jpg'
       },
       {
         title:"Cart",
         description:"La sezione del carrello dell'applicazione NerdEcommerce contiene un riepilogo di tutti i prodotti inseriti dal cliente. Ogni prodotto sarà rappresentato da una immagine, il nome del prodotto, il prezzo e la quantità presente all'interno del carrello. Inoltre, per ogni prodotto presente ci sarà un pulsante che consente di eliminarlo dal carrello. La tab bar dell'applicazione visualizza un'icona del carrello con una notifica che indica il numero di prodotti presenti al suo interno. Questo consente all'utente di vedere rapidamente il numero di prodotti che ha nel carrello senza dover aprire la sezione del carrello. Nella parte finale della sezione del carrello, verrà visualizzato il prezzo totale dei prodotti presenti nel carrello. In questo modo, l'utente può vedere rapidamente il totale della sua spesa. Infine, l'applicazione fornisce un pulsante 'Acquista', che consente all'utente di procedere con l'acquisto dei prodotti presenti nel carrello.",
-        url: '/images/NerdsCart.png'
+        url: '/images/NerdsCart.jpg'
       },
       {
         title:"Checkout",
         description:"La sezione checkout di NerdEcommerce presenta alcune differenze a seconda che l'utente sia loggato o meno. Nel caso in cui l'utente non sia loggato, la sezione checkout visualizzerà un modulo in cui verranno richiesti tutti i dati necessari per completare l'acquisto. Questi dati includono il nome, l'indirizzo di spedizione, e le informazioni sulla carta di credito. In fondo alla pagina, l'utente troverà un pulsante 'Compila i campi' per inviare i dati e procedere all'acquisto. Una volta che l'utente ha completato il modulo con tutti i dati necessari, il pulsante 'Compila i campi' diventerà 'Acquista' e l'utente potrà confermare l'acquisto. Nel caso in cui l'utente sia loggato, la sezione checkout visualizzerà un riepilogo dei dati di spedizione e dei dettagli della carta di credito dell'utente. L'utente avrà la possibilità di modificare questi dati, se necessario, e dovrà inserire solo il codice di sicurezza CVV della carta di credito. Una volta completati questi passaggi, l'utente potrà premere il pulsante 'Acquista' per confermare l'acquisto.",
-        url: '/images/NerdsCheckout.png'
+        url: '/images/NerdsCheckout.jpg'
       },
       {
         title:"Sections",
         description:"La sezione 'Sezioni' contiene diverse schede con il titolo delle varie sezioni dell'e-commerce, come ad esempio 'Videogiochi', 'Decoro', 'Console', ecc. Ogni scheda contiene una selezione di prodotti basati sulla categoria della sezione selezionata. Premendo su una scheda, si accede ad una pagina contenente una lista di prodotti relativi alla sezione selezionata. Ogni prodotto ha una propria scheda con la sua immagine, prezzo e nome, l’utente ha la possibilità di aggiungerlo al carrello. Questa sezione consente all'utente di esplorare le diverse categorie dell'e-commerce e trovare facilmente i prodotti che stanno cercando.",
-        url: '/images/Nerdssections.png'
+        url: '/images/Nerdssections.jpg'
       },
       {
         title:"Account",
         description:"La sezione utente in nerdEcomerce è diversa in base al fatto che l'utente sia loggato o meno. Se l'utente non è loggato, la sezione visualizzata gli permette di effettuare il login inserendo le proprie credenziali oppure di iscriversi al sito premendo il pulsante 'Iscriviti'. Se invece l'utente è loggato, la sezione mostrerà un riepilogo dei suoi dati di indirizzo e carta di credito salvati, che possono essere modificati, oltre al pulsante 'Logout' per effettuare la disconnessione dal proprio account. Una volta che l'utente effettua il login o l'iscrizione, i suoi dati verranno salvati nel dispositivo, consentendogli di essere automaticamente loggato nell'applicazione ogni volta che la utilizza.",
-        url: '/images/NerdsAuth.png'
+        url: '/images/NerdsAuth.jpg'
       },
     ],
     'https://expo.dev/@lorenzopalumbo/NerdsEcomerce',
@@ -103,27 +103,27 @@ const PagesDatas = [
       {
         title:"Home",
         description:"Si presenta con un design accattivante e ricco di elementi grafici ispirati al tema del gioco. Come elemento principale è presente una barra di input per la ricerca dei giocatori, dove l'utente può inserire il nome del giocatore che desidera trovare. Sotto alla barra di ricerca sono presenti una serie di bottoni per selezionare lo stato in cui l’account del giocatore si trova. Inoltre, è presente un'area dedicata ai personaggi gratuiti della settimana, dove vengono presentati i personaggi disponibili per l'uso gratuito in quella determinata settimana. Questa sezione è presentata come una serie di immagini. In alto abbiamo un menu di navigazione che consente all'utente di accedere alle diverse sezioni del sito, come le informazioni sui personaggi ed il proprio account.",
-        url: '/images/leagueOfWikiHome.png'
+        url: '/images/leagueOfWikiHome.jpg'
       },
       {
         title:"Find Champ",
         description:"Si presenta con un layout moderno e accattivante, dove l'utente può cercare e scegliere il personaggio desiderato per avere maggiori informazioni. Nella parte superiore della pagina è presente una barra di input, dove l'utente può inserire il nome del personaggio che desidera trovare. Sotto alla barra di ricerca sono presentati i personaggi disponibili, organizzati in una griglia di card. Ogni card contiene l'immagine del personaggio ed il nome.",
-        url: '/images/leagueOfWikiChamps.png'
+        url: '/images/leagueOfWikiChamps.jpg'
       },
       {
         title:"Champ Info",
         description:"Si presenta con un layout accattivante e informativo. La pagina inizia con una sezione a sinistra, che mostra un'immagine del personaggio, accompagnata dal nome e dal ruolo seguito da una stella per metterlo tra i preferiti. A destra abbiamo una breve descrizione della storia del personaggio. Successivamente, la pagina mostra una sezione che riguarda i consigli di gioco. In basso a destra è presente un carosello di immagini, che mostra tutte le skin disponibili, consentendo all'utente di visualizzare le diverse opzioni di personalizzazione. Infine in basso a sinistra è presente una sezione dedicata alle abilità, dove ogni abilità è rappresentata da un'immagine, accompagnata dal nome, dalla descrizione e dal costo.",
-        url: '/images/leagueOfWikiChampInfo.png'
+        url: '/images/leagueOfWikiChampInfo.jpg'
       },
       {
         title:"Account",
         description:"Organizzata in modo semplice ed intuitivo, con una lista laterale a sinistra che contiene l’elenco dei nostri giocatori preferiti e una lista a destra con l’elenco dei nostri personaggi preferiti. Ogni giocatore è rappresentato da una miniatura dell'immagine profilo, accompagnata dal nome e dal suo livello. L’elenco dei personaggi preferiti invece sono rappresentanti da una miniatura dell'immagine, accompagnata dal nome.",
-        url: '/images/leagueOfWikiAccount.png'
+        url: '/images/leagueOfWikiAccount.jpg'
       },
       {
         title:"Player Info",
         description:"Ha una disposizione simile a quella di una scheda. Nella parte superiore della pagina, a sinistra, è presente il nome del giocatore ed il suo livello, mentre a destra sono visualizzati i suoi rank (flex, soloQ e TFT), ovvero la sua posizione nella classifica del gioco. È presente una tabella con tutti gli ultimi match giocati dal giocatore, con informazioni quali la durata della partita, il personaggio scelto, il risultato della partita, la build e il punteggio. Questa tabella è organizzata in modo che sia facile da consultare e che permetta all'utente di visualizzare rapidamente le informazioni sulla partita.",
-        url: '/images/leagueOfWikiSummoner.png'
+        url: '/images/leagueOfWikiSummoner.jpg'
       },
     ],
     'https://leagueofwiki.netlify.app/',
@@ -149,7 +149,7 @@ const PagesDatas = [
       {
         title:"Game",
         description:"Rappresentazione di una partita in cui il giocatore ha vinto, possiamo notare le carte dei due giocatori e come lo score si sia aggiornato, inoltre abbiamo il verdetto del gioco sul risultato della partita.",
-        url: '/images/setteMezzoGame.png'
+        url: '/images/setteMezzoGame.jpg'
       },
     ],
     'https://settemezzo.netlify.app/',
@@ -165,7 +165,7 @@ const PagesDatas = [
       {
         title:"LogIn",
         description:"Proprio come il sito originale il bottone accedi diventerà cliccabile solo nel momento in cui verrano rispettati determinati parametri di lunghezza degli input, inoltre abbiamo la possibilità di vedere la password che stiamo inserendo. Cliccando sul bottone 'iscriviti' avremo la possibilità di navigare al SignUp.",
-        url: '/images/fakeInstaLogin.png'
+        url: '/images/fakeInstaLogin.jpg'
       },
       {
         title:"SignUp",
@@ -175,7 +175,7 @@ const PagesDatas = [
       {
         title:"Home",
         description:"Formata da una serie di post falsi creati tramite diverse api che generano nomi e immagini casuali, possiamo notare che un altra api è stata utilizzata per la sezione 'suggerimenti'. In alto troviamo la classica barra di instagram con le sezione home, direct, post, notifiche e profilo, possiamo notare che la sezione profilo è la nostra attuale immagine profilo.",
-        url: '/images/fakeInstaHome.png'
+        url: '/images/fakeInstaHome.jpg'
       },
       {
         title:"Base profile",
@@ -190,12 +190,12 @@ const PagesDatas = [
       {
         title:"Home after post",
         description:"Proprio come nel sito originale dopo aver caricato una foto verremo condotti alla home di instagram e vedremo come primo post la foto appena caricata seguita da post fake. Se dovessimo cambiare o ricaricare la pagina avremo a disposizione altri post fake.",
-        url: '/images/fakeInstaHomePost.png'
+        url: '/images/fakeInstaHomePost.jpg'
       },
       {
         title:"Profile",
         description:"Possiamo notare che il valore dei post è salito e si basa effettivamente sui post caricati dal utente, inoltre notiamo come caricando una foto profilo anche l'header cambia avendo una miniatura della foto profilo dell'utente.",
-        url: '/images/fakeInstaProfile.png'
+        url: '/images/fakeInstaProfile.jpg'
       },
     ],
     '',
@@ -237,22 +237,22 @@ const PagesDatas = [
       {
         title:"Hero",
         description:"Rappresentazione della sezione Hero.",
-        url: '/images/universAppHero.png'
+        url: '/images/universAppHero.jpg'
       },
       {
         title:"Arguments",
         description:"Rappresentazione della sezione argomenti.",
-        url: '/images/universAppArguments.png'
+        url: '/images/universAppArguments.jpg'
       },
       {
         title:"Difference",
         description:"Rappresentazione delle differenze.",
-        url: '/images/universAppTable.png'
+        url: '/images/universAppTable.jpg'
       },
       {
         title:"Stats",
         description:"Rappresentazione delle statistiche in Italia sui tech job.",
-        url: '/images/universAppStats.png'
+        url: '/images/universAppStats.jpg'
       },
     ],
     'https://fakeuniversapp.netlify.app/',
