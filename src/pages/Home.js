@@ -78,7 +78,7 @@ const Home = () => {
       <section className='mt-40 w-[90%] m-auto'>
         <div className='flex justify-around items-center text-center border-4 rounded-xl border-pink bg-secondary text-black px-10 max-laptopXS:flex-col'>
           <div className='w-1/3 ml-10 flex max-laptopXS:justify-center max-laptopXS:w-full max-laptopXS:ml-0 max-laptopXS:mb-10'>
-            <img className='h-[400px]' src={url + '/images/me.png'} alt='' />
+            <img className='h-[400px]' src={url + '/images/me.webp'} alt='' />
           </div>
           <div className='w-1/3 max-laptopXS:w-full'>
             <h1 className='text-[2rem] font-black'>Lorenzo Palumbo</h1>
