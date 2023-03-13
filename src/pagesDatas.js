@@ -211,17 +211,17 @@ const PagesDatas = [
       {
         title:"Home",
         description:"Si presenta con un design molto semplice ed intuitivo. Essa è composta da un input che ci da la possibilità di scegliere la quantità da convertire, due select che ci offrono la possibilità di scegliere il tipo di moneta ed un bottone 'coverti' per eseguire l'azione.",
-        url: '/images/valueConverterStart.png'
+        url: '/images/valueConverterStart.jpg'
       },
       {
         title:"Convert",
         description:"Una volta convertito il valore la pagina ci restituirà il risultato e metterà a nostra disposizione un bottone di informazione sulla valuta scelta, essa ci porterà alla pagina 'info valute'.",
-        url: '/images/valueConverterDone.png'
+        url: '/images/valueConverterDone.jpg'
       },
       {
         title:"Info",
         description:"Si presenta con un design molto semplice. Nella parte alta abbiamo a disposizione una lista di bottoni che rappresentano i vari continenti. Essi ci porteranno alla sezione delle valute dei rispettivi continenti. Il box della descrizione è formato dal nome, una descrizione della storia ed una foto della valuta. Il tasto 'più informazioni' ci poterà alla pagina wikipedia della valuta.",
-        url: '/images/valueConverterInfo.png'
+        url: '/images/valueConverterInfo.jpg'
       },
     ],
     'https://valueconverterlorenzopalumbo.netlify.app',
