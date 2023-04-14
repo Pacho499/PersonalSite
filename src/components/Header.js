@@ -38,8 +38,8 @@ const Header = () => {
               onClick={openMenu}
               className="hamburgerMenuLinks max-laptopXS:text-[20px]"
             />
-            <a className="hamburgerMenuLinks max-laptopXS:text-[20px]" onClick={openMenu} href="#skills">
-              Competenze
+            <a className="hamburgerMenuLinks max-laptopXS:text-[20px]" onClick={openMenu} href="#experience">
+              Esperienze
             </a>
             <a className="hamburgerMenuLinks max-laptopXS:text-[20px]" onClick={openMenu} href="#Contact">
               Contattami
