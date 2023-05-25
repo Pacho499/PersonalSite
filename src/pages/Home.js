@@ -123,7 +123,7 @@ const Home = () => {
         <h1 className='text-center mb-12 text-3xl font-bold text-main'>
           Esperienze lavorative
         </h1>
-        <div className='grid grid-cols-3 gap-4 max-laptop:w-2/3 max-laptopXS:w-full'>
+        <div className='grid grid-cols-3 gap-4 max-laptop:grid-cols-2 max-laptopXS:grid-cols-1'>
           {works.map((work, index) => { 
             return (<ProjectCard key={index} pageData={work}/>)
           })}
