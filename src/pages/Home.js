@@ -123,7 +123,7 @@ const Home = () => {
         <h1 className='text-center mb-12 text-3xl font-bold text-main'>
           Esperienze lavorative
         </h1>
-        <div className='w-1/3 max-laptop:w-2/3 max-laptopXS:w-full'>
+        <div className='grid grid-cols-3 gap-4 max-laptop:w-2/3 max-laptopXS:w-full'>
           {works.map((work, index) => { 
             return (<ProjectCard key={index} pageData={work}/>)
           })}
@@ -184,7 +184,7 @@ const Home = () => {
               </h2>
             ) : (
               <button
-                className='p-2 w-fit mt-10 text-center rounded-lg bg-green text-main hover:bg-main hover:text-green font-bold text-xl'
+                className='p-2 w-fit mt-10 text-center rounded-lg bg-green text-main focus:bg-main focus:text-green focus:outline-none hover:bg-main hover:text-green font-bold text-xl'
                 onClick={sendEmail}
               >
                 Invia

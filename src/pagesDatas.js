@@ -12,6 +12,22 @@ class Page {
 }
 const PagesDatas = [
   new Page(
+    'HRM Group',
+    ['Salesforce', 'Jquery', 'Controller', 'Javascript', 'template', 'ISML', 'Bootstrap 4'],
+    'Come sviluppatore front-end sono entrato a far parte di HRM group, un azienda di consulenza informatica. Dentro l’azienda ho avuto la possibilità di partecipare ad un academy di Salesforce in cui ho imparato le basi di questa piattaforma.  Attualmente sono ancora presente in azienda.',
+    "Come sviluppatore front-end sono entrato a far parte di HRM group, un azienda di consulenza informatica. Dentro l’azienda ho avuto la possibilità di partecipare ad un academy di Salesforce in cui ho imparato le basi di questa piattaforma e la creazione e utilizzo di un software basato sul mvc (model view controller). Questo mi ha portato ad avere maggiore conoscenza dei controller, model e tutto ciò che riguarda il mondo Salesforce. Oltre a questo sono riuscito anche a rafforzare le mie conoscenze di Jquery e bootstrap oltre che di Javascript che viene impiegato come back-end. Inoltre ho acquisito conoscenza della tipologia di lavoro ‘Agile’ e del utilizzo di git-hub e bit-bucket in progetti con più developer. Attualmente sono ancora presente in azienda e dopo la conclusione del percorso di formazione Salesforce attendo di essere inserito in nuovi progetti sperando di migliorare le mie competenze e ampliare le mie conoscenze oltre che trovare delle vere sfide per testare il mio livello da programmatore.",
+    true,
+    [
+      {
+        title:'Esercitazione',
+        description:"Questa è una pagina del nostro ecomerce effettuato durante il corso che permette al utente di selezionare il prezzo del libro (dal prezzo in sconto fino al doppio del prezzo classico) e vedere i vari dati. L'ecomerce ha preso ispirazione dal sito web Leanpub",
+        url: 'images/SalesforceExercise.png'
+      },
+    ],
+    '',
+    '',
+  ),
+  new Page(
     'Odd Monitor',
     ['Typescript', 'React.js', 'Tailwind', 'GitLab', 'Node.js'],
     'Come sviluppatore front-end, ho lavorato alla creazione di oddMonitor, un tool per scommettitori professionisti. La mia principale responsabilità era quella di creare interfacce utente interattive e reattive per gli utenti',

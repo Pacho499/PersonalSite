@@ -22,7 +22,7 @@ const ImageSlider = ({imagesData, git, www, work}) => {
             <div className='flex justify-center h-1/6'>
               {images.map((_,index) => {
                 return (
-                  <div
+                  <button
                     key={index}
                     onClick={() => {
                       handleImg(index);
@@ -34,22 +34,23 @@ const ImageSlider = ({imagesData, git, www, work}) => {
                     }
                   >
                     <p>{index + 1}</p>
-                  </div>
+                  </button>
                 );
               })}
             </div>
           </div>
-          <div className='w-1/4 description-img-container max-laptop:w-full max-laptop:h-fit max-laptop:ml-0 '>
+          <div  className='w-1/4 description-img-container max-laptop:w-full max-laptop:h-fit max-laptop:ml-0 '>
             <div>
               <h1 className='font-bold text-3xl mt-4'>{imagesData[currentImage].title}</h1>
-              <p className={work ? 'image-description h-[570px] max-laptop:h-auto imgDescription-hidden-scrollbar' : 'image-description h-[450px] max-laptop:h-fit imgDescription-hidden-scrollbar'}>{imagesData[currentImage].description}</p>
+              <p tabIndex={0} className={work ? 'image-description h-[570px] max-laptop:h-auto imgDescription-hidden-scrollbar focus:bg-green' : 'image-description h-[450px] max-laptop:h-fit imgDescription-hidden-scrollbar focus:bg-green'}>{imagesData[currentImage].description}</p>
             </div>
             {work ? null : (
               <div className='max-laptop:mb-6'>
                 <h2 className='text-2xl font-bold text-black mt-4'>Link</h2>
                 <div className='flex justify-center items-center mt-4 mx-2'>
-                  <div className='linkButton'>
+                  <div tabIndex={0} className='linkButton'>
                     <a
+                      tabIndex={-1}
                       className='flex items-center'
                       href={git}
                       target='_blank'
@@ -63,11 +64,12 @@ const ImageSlider = ({imagesData, git, www, work}) => {
                       />
                     </a>
                   </div>
-                  <div className='linkButton ml-3'>
+                  <div tabIndex={0} className='linkButton ml-3'>
                     {www === '' ? (
                       <p>Non disponibile</p>
                     ) : (
                       <a
+                        tabIndex={-1}
                         href={www}
                         target='_blank'
                         rel='noreferrer'

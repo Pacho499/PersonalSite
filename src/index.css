@@ -20,6 +20,7 @@
   from {
     width: 0vw;
   }
+
   to {
     width: 40vw;
   }
@@ -30,6 +31,7 @@
   animation-name: renderMenu;
   animation-fill-mode: forwards;
 }
+
 .hamburgerMenuLinks {
   width: 100%;
   border-bottom-width: 6px;
@@ -44,7 +46,7 @@
   padding-bottom: 40px;
 }
 
-.ImgSlider-buttonSelect{
+.ImgSlider-buttonSelect {
   background: #55C7EA;
   display: flex;
   align-items: center;
@@ -58,7 +60,7 @@
   width: 2rem;
 }
 
-.ImgSlider-buttonUnselect{
+.ImgSlider-buttonUnselect {
   background-color: #DFFFD8;
   display: flex;
   align-items: center;
@@ -71,14 +73,14 @@
   width: 2rem;
 }
 
-.description-img-container{
- text-align: center;
- position: relative;
- border: 2rem #DFFFD8;
- background: #95BDFF;
- margin-left: 2rem;
- border-radius: 0.5rem;
- height: 700px;
+.description-img-container {
+  text-align: center;
+  position: relative;
+  border: 2rem #DFFFD8;
+  background: #95BDFF;
+  margin-left: 2rem;
+  border-radius: 0.5rem;
+  height: 700px;
 }
 
 .image-description {
@@ -92,21 +94,28 @@
   text-align: left;
 }
 
-.MenuButton{
+.MenuButton {
   border-width: 4px;
   color: #DFFFD8;
   border-radius: 20px;
-  border-color: #F7C8E0;;
+  border-color: #F7C8E0;
+  ;
   padding: 10px;
   font-weight: 900;
 }
 
-.MenuButton:hover{
+.MenuButton:hover {
   border-color: #DFFFD8;
   color: #F7C8E0;
 }
 
-.linkButton{
+.MenuButton:focus {
+  border-color: #DFFFD8;
+  color: #F7C8E0;
+  outline: none;
+}
+
+.linkButton {
   background-color: #F7C8E0;
   color: #3c4141;
   border-radius: 0.5rem;
@@ -114,28 +123,35 @@
   padding: 0.5rem;
   text-align: center;
 }
-.linkButton:hover{
+
+.linkButton:hover {
   background-color: #DFFFD8;
 }
 
-*{
+.linkButton:focus {
+  background-color: #DFFFD8;
+  outline: none;
+}
+
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   letter-spacing: 1px;
 }
 
-body, html {
+body,
+html {
   margin: 0;
-  font-family:'Shantell Sans', 'Big Shoulders Stencil Display', cursive;
-  font-family:'Shantell Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Shantell Sans', 'Big Shoulders Stencil Display', cursive;
+  font-family: 'Shantell Sans', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #DFFFD8;
   scroll-behavior: smooth;
-  color:#3c4141
+  color: #3c4141
 }
 
 code {
