@@ -78,7 +78,7 @@ const Home = () => {
       <section className='mt-40 w-[90%] m-auto'>
         <div className='flex justify-around items-center text-center border-4 rounded-xl border-pink bg-secondary text-black px-10 max-laptopXS:flex-col'>
           <div className='w-1/3 ml-10 flex max-laptopXS:justify-center max-laptopXS:w-full max-laptopXS:ml-0 max-laptopXS:mb-10'>
-            <img className='h-[400px]' src={url + '/images/me.png'} alt='' />
+            <img className='h-[400px] max-laptopXS:h-[300px]' src={url + '/images/me.png'} alt='' />
           </div>
           <div className='w-1/3 max-laptopXS:w-full'>
             <h1 className='text-[2rem] font-black'>Lorenzo Palumbo</h1>
@@ -123,7 +123,7 @@ const Home = () => {
         <h1 className='text-center mb-12 text-3xl font-bold text-main'>
           Esperienze lavorative
         </h1>
-        <div className='grid grid-cols-3 gap-4 max-laptop:grid-cols-2 max-laptopXS:grid-cols-1'>
+        <div className='grid grid-cols-3 gap-4 justify-items-center max-laptop:grid-cols-2 max-laptopXS:grid-cols-1'>
           {works.map((work, index) => { 
             return (<ProjectCard key={index} pageData={work}/>)
           })}
@@ -134,7 +134,7 @@ const Home = () => {
         <h1 className='text-center mb-12 text-3xl font-bold text-main'>
           Portfolio
         </h1>
-        <div className='grid grid-cols-3 gap-4 max-laptop:grid-cols-2 max-laptopXS:grid-cols-1'>
+        <div className='grid grid-cols-3 gap-4 justify-items-center max-laptop:grid-cols-2 max-laptopXS:grid-cols-1'>
           {personalProject.map((work, index) => { 
             return (<ProjectCard key={index} pageData={work}/>)
           })}
