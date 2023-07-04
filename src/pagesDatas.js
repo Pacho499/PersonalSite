@@ -19,9 +19,14 @@ const PagesDatas = [
     true,
     [
       {
-        title:'Esercitazione',
-        description:"Questa è una pagina del nostro ecomerce effettuato durante il corso che permette al utente di selezionare il prezzo del libro (dal prezzo in sconto fino al doppio del prezzo classico) e vedere i vari dati. L'ecomerce ha preso ispirazione dal sito web Leanpub",
-        url: 'images/SalesforceExercise.png'
+        title:'Homepage',
+        description:"Questa è la home del progetto finale del corso. Abbiamo preso un template di figma e deciso di ricreare lo stile oltre che aggiungere le varie funzionalità. L' header ha al suo interno il logo di salesforce in stile 'grigio'. Accanto all'intestazione, ci sono le opzioni di navigazione principali, come 'Home', 'Prodotti', 'About'. infine sul fondo possiamo trovare il carrello e il bottone di login. la schermata poi contiene varie immagini a replicare il template di figma",
+        url: 'images/SalesforceExercise.jpg'
+      },
+      {
+        title:'Product listing page',
+        description:"Andando su 'Prodotti' troviamo la PLP con tutti i prodotti presenti nel catalogo standard di Salesforce. Possiamo notare che la PLP ha un bredcrumb che permette di tornare indietro ed una search bar per la ricerca dei prodotti desiderati. Inoltre la pagina è divisa in 2 parti: il lato sinistro contentente i filtri che possono essere selezionati per migliorare la ricerca e il lato destro contente le varie card dei prodotti che il nostro ecommerce mette a disposizione",
+        url: 'images/SalesforceExercise2.jpg'
       },
     ],
     '',
